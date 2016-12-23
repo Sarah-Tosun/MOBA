@@ -1,10 +1,7 @@
 package de.hs_weingarten.haplaner;
 
-import android.support.v4.app.FragmentPagerAdapter;
-
-/**
- * Created by Sarah on 19.12.2016.
- */
+import android.content.Context;
+import android.support.v4.app.*;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 3;
@@ -23,7 +20,7 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return PageFragment.newInstance(position + 1);
+        return StundenplanFragment.newInstance(position + 1);
     }
 
     @Override
