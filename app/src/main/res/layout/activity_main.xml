@@ -28,12 +28,15 @@
                 android:text="Aufgaben"
                 android:id="@+id/aufgabenTab" />
         </android.support.design.widget.TabLayout>
+
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v4.widget.NestedScrollView
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+        android:layout_marginTop="50dp"
+        android:elevation="1dp">
 
-    </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
 </android.support.design.widget.CoordinatorLayout>

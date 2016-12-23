@@ -4,8 +4,8 @@ import android.content.Context;
 import android.support.v4.app.*;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
-    final int PAGE_COUNT = 3;
-    private String tabTitles[] = new String[] { "Tab1", "Tab2", "Tab3" };
+    final private int PAGE_COUNT = 2;
+    private String tabTitles[] = new String[] { "Stundenplan", "Aufgaben"};
     private Context context;
 
     public FragmentAdapter(FragmentManager fm, Context context) {

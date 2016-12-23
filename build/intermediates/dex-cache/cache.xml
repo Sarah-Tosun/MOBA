@@ -66,11 +66,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\MOBA1\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.0_e677915da20352c609184428fbfad4c1e0d43389\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Sarah\AndroidStudioProjects\MOBA1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="05c44d059726bee29c9b979fa7f9625ffa20a50a">
+        sha1="b280250e7618152895fcb2d4535d8a02b78a9816">
         <dex dex="C:\Users\Sarah\AndroidStudioProjects\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4624a18397fc502a06998fbb4842e1e5c19ee95c\classes.dex" />
     </item>
     <item
@@ -115,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="35d4ec122631073416c109040f99e0fce18aaab2">
+        sha1="35a402162a4ea75493a90ece1028219afd9f6ccb">
         <dex dex="C:\Users\Sarah\AndroidStudioProjects\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_788fcb4452d655dc40295d9a979d81cee1b6f497\classes.dex" />
     </item>
     <item
