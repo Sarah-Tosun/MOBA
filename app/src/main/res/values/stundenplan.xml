@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="montag">Montag</string>
+    <string name="dienstag">Dienstag</string>
+    <string name="mittwoch">Mittwoch</string>
+    <string name="donnerstag">Donnerstag</string>
+    <string name="freitag">Freitag</string>
+</resources>
