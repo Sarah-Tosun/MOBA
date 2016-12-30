@@ -5,7 +5,7 @@ import android.support.v4.app.*;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
     final private int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[] { "Stundenplan", "Aufgaben"};
+    private String fragments[] = new String[] { "Stundenplan", "Aufgaben"};
     private Context context;
 
     public FragmentAdapter(FragmentManager fm, Context context) {
@@ -20,12 +20,20 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return StundenplanFragment.newInstance(position + 1);
+        switch (position){
+            case 0:
+                return new StundenplanFragment();
+            case 1:
+                return new AufgabenFragment();
+            default:
+                return null;
+        }
+        //return StundenplanFragment.newInstance(position + 1);
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
-        return tabTitles[position];
+        return fragments[position];
     }
 }

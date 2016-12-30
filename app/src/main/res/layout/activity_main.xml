@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -10,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
 
-        <android.support.design.widget.TabLayout
+    <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,16 +26,14 @@
                 android:layout_width="wrap_content"
                 android:text="Aufgaben"
                 android:id="@+id/aufgabenTab" />
-        </android.support.design.widget.TabLayout>
 
+        </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.design.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:elevation="1dp">
-
-    </android.support.design.widget.CoordinatorLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:id="@+id/seite1" />
 
 </android.support.design.widget.CoordinatorLayout>
