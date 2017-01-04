@@ -2137,4 +2137,8 @@
         <item name="passwordToggleTint">@color/design_tint_password_toggle</item>
         <item name="passwordToggleContentDescription">@string/password_toggle_content_description</item>
     </style>
+    <style name="ersteZeile" parent="@style/AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#1a237e</item>
+    </style>
 </resources>

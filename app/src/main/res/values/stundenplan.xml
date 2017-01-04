@@ -5,4 +5,10 @@
     <string name="mittwoch">Mittwoch</string>
     <string name="donnerstag">Donnerstag</string>
     <string name="freitag">Freitag</string>
+
+    <style name="ersteZeile" parent="@style/AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#1a237e</item>
+    </style>
+
 </resources>

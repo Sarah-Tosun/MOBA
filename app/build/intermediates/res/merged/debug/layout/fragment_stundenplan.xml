@@ -9,89 +9,232 @@ android:layout_height="match_parent">
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/tabelle"
         android:paddingEnd="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:paddingTop="10dp">
+        android:paddingTop="20dp">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/zeile1">
 
             <TextView
                 android:text="@string/montag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:background="@drawable/layout_zeile1"
+                style="@style/ersteZeile"
                 android:id="@+id/montag" />
 
             <TextView
                 android:text="@string/dienstag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:background="@drawable/layout_zeile1"
+                style="@style/ersteZeile"
                 android:id="@+id/dienstag" />
 
             <TextView
                 android:text="@string/mittwoch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:background="@drawable/layout_zeile1"
+                style="@style/ersteZeile"
                 android:id="@+id/mittwoch" />
 
             <TextView
                 android:text="@string/donnerstag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:background="@drawable/layout_zeile1"
+                style="@style/ersteZeile"
                 android:id="@+id/donnerstag" />
 
             <TextView
                 android:text="@string/freitag"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:background="@drawable/layout_zeile1"
+                style="@style/ersteZeile"
                 android:id="@+id/freitag" />
         </TableRow>
-
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/zeile2">
 
             <TextView
                 android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView6" />
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z2eins" />
 
             <TextView
                 android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView5" />
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z2zwei" />
 
             <TextView
                 android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4" />
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z2drei" />
 
             <TextView
                 android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3" />
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z2vier" />
 
             <TextView
                 android:text="TextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2" />
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z2fünf" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/zeile3">
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z3eins" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z3zwei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z3drei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z3vier" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z3fünf" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/zeile4">
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z4eins" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z4zwei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z4drei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z4vier" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z4fünf" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/zeile5">
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z5eins" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z5zwei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z5drei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z5vier" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z5fünf" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/zeile6">
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z6eins" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z6zwei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z6drei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z6vier" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z6fünf" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/zeile7">
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z7eins" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z7zwei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z7drei" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z7vier" />
+
+            <TextView
+                android:text="TextView"
+                android:background="@drawable/layout_cell"
+                android:id="@+id/z7fünf" />
         </TableRow>
 
+
     </TableLayout>
-
-
 </FrameLayout>
 </android.support.design.widget.CoordinatorLayout>
 

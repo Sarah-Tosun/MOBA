@@ -28,7 +28,6 @@ public class FragmentAdapter extends FragmentPagerAdapter {
             default:
                 return null;
         }
-        //return StundenplanFragment.newInstance(position + 1);
     }
 
     @Override
