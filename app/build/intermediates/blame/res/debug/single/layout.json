@@ -112,6 +112,10 @@
         "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\select_dialog_item_material.xml"
     },
     {
+        "merged": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\einstellung_stundenplan.xml",
+        "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\src\\main\\res\\layout\\einstellung_stundenplan.xml"
+    },
+    {
         "merged": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_menu_item_action_area.xml"
     },
@@ -168,12 +172,12 @@
         "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\layout\\design_layout_snackbar.xml"
     },
     {
-        "merged": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",

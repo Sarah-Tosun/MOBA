@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Hausaufgabenplaner</string>
+    <string name="actionBarName">Einstellungen</string>
 </resources>
