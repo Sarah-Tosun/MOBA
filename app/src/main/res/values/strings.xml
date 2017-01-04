@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Hausaufgabenplaner</string>
-    <string name="actionBarName">Einstellungen</string>
+    <string name="actionBarName">Fächer</string>
+    <string-array name="fächer">
+        <item>Deutsch</item>+
+        <item>Englisch</item>
+        <item>Mathematik</item>
+        <item>Biologie</item>
+        <item>Chemie</item>
+        <item>Geschichte</item>
+        <item>Physik</item>
+        <item>Erdkunde</item>
+    </string-array>
 </resources>

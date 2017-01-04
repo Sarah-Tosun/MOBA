@@ -61,31 +61,26 @@
                     android:id="@+id/zeile2">
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z2eins" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z2zwei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z2drei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z2vier" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z2fünf" />
@@ -97,31 +92,26 @@
                     android:id="@+id/zeile3">
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z3eins" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z3zwei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z3drei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z3vier" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z3fünf" />
@@ -133,31 +123,26 @@
                     android:id="@+id/zeile4">
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z4eins" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z4zwei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z4drei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z4vier" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z4fünf" />
@@ -169,31 +154,26 @@
                     android:id="@+id/zeile5">
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z5eins" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z5zwei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z5drei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z5vier" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z5fünf" />
@@ -205,31 +185,26 @@
                     android:id="@+id/zeile6">
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z6eins" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z6zwei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z6drei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z6vier" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z6fünf" />
@@ -241,31 +216,26 @@
                     android:id="@+id/zeile7">
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z7eins" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z7zwei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z7drei" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z7vier" />
 
                     <TextView
-                        android:text="TextView"
                         android:background="@drawable/layout_cell"
                         android:onClick="onClick"
                         android:id="@+id/z7fünf" />
