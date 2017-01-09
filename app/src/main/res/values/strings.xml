@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Hausaufgabenplaner</string>
-    <string name="actionBarName">Fächer</string>
+    <string name="actionBarNameStundenPlan">Fächer</string>
+    <string name="actionBarNameAufgaben">Aufgaben</string>
     <string-array name="fächer">
         <item>Deutsch</item>+
         <item>Englisch</item>

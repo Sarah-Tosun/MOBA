@@ -164,6 +164,10 @@
         "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
+        "merged": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\einstellungen_aufgaben.xml",
+        "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\src\\main\\res\\layout\\einstellungen_aufgaben.xml"
+    },
+    {
         "merged": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\Sarah\\AndroidStudioProjects\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\layout\\abc_screen_content_include.xml"
     },

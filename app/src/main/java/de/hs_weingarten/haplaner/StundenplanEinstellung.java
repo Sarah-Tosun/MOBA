@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 /**
  * Created by Sarah on 04.01.2017.
@@ -33,6 +34,7 @@ public class StundenplanEinstellung extends AppCompatActivity implements Adapter
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         //spinner.setOnItemClickListener((AdapterView.OnItemClickListener) this);
+
     }
 
     public boolean onOptiosItemSelected(MenuItem item){
@@ -50,6 +52,15 @@ public class StundenplanEinstellung extends AppCompatActivity implements Adapter
 
     public void onNothingSelected(AdapterView<?> parent) {
         // Another interface callback
+    }
+
+    public void onClick(View v) {
+        switch(v.getId()) {
+            case R.id.fb_ok_stundenplan:
+                Toast toast = Toast.makeText(getApplicationContext(), "Klick", Toast.LENGTH_SHORT);
+                toast.show();
+                break;
+        }
     }
 }
 

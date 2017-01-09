@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:3:5-40
 		INJECTED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\Andr
 		INJECTED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:5:5-25:19
 MERGED from [com.android.support:design:25.1.0] C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\AndroidManifest.xml:22:5-20
@@ -56,11 +56,19 @@ ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\Andr
 activity#de.hs_weingarten.haplaner.StundenplanEinstellung
 ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:18:9-21:20
 	android:label
-		ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:19:13-50
+		ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:19:13-61
 	android:parentActivityName
 		ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:20:13-55
 	android:name
 		ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:18:19-57
+activity#de.hs_weingarten.haplaner.AufgabenEinstellung
+ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:22:9-24:57
+	android:label
+		ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:23:13-58
+	android:parentActivityName
+		ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:24:13-55
+	android:name
+		ADDED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml:22:19-54
 uses-sdk
 INJECTED from C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.1.0] C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\AndroidManifest.xml:21:5-23:62

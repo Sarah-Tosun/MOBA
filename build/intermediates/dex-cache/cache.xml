@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="87c28f0a4d083a5c28e2659c6ae057c30be6fe42">
+        sha1="9e096b2a2c02325ff240569367434898590ebf6c">
         <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_de8dd02034ea335ff46a4f8570d99400aa18c504\classes.dex" />
     </item>
     <item
@@ -196,7 +196,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="9f63cfd7d9e9b34bd4ac63f0387c0dc91946dee3">
+        sha1="172ff8da899b552fdc5759163eacd060ed1a2f05">
         <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bb83e23db358010e5faac835516df2e5d923c63b\classes.dex" />
     </item>
     <item
