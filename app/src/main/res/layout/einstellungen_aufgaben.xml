@@ -5,10 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/fb_ok_aufgaben_einst"
+        app:backgroundTint="?attr/actionModeSplitBackground"
+        android:onClick="onClick"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        app:layout_anchorGravity="bottom|right|end" />
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <Spinner
             android:layout_marginTop="50dp"
@@ -21,42 +34,34 @@
             android:background="@drawable/layout_spinner" />
 
 
-        <EditText
-            android:layout_marginTop="50dp"
+        <TextView
+            android:text="TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:text="Datum"
-            android:ems="10"
-            android:id="@+id/datum"
-            android:textColor="?android:attr/colorControlNormal"
+            android:id="@+id/datum_textView_aufg"
             android:textAlignment="center"
+            android:layout_marginTop="50dp"
             android:textSize="20sp" />
+
+        <Button
+            android:text="@string/ButtonDatum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/changedatum_aufg"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center" />
 
         <EditText
             android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:text="Beschreibung"
             android:ems="10"
-            android:id="@+id/beschreibung"
-            android:textColor="?android:attr/colorControlNormal"
+            android:id="@+id/beschreibung_edittext_aufg"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:hint="Beschreibung" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_input_add"
-            android:id="@+id/fb_ok_aufgaben_einst"
-            app:backgroundTint="?attr/actionModeSplitBackground"
-            android:onClick="onClick"
-            android:paddingRight="4dp"
-            android:layout_marginTop="230dp"
-            android:layout_marginLeft="350dp"
-            android:paddingEnd="4dp" />
 
     </LinearLayout>
 

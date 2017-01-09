@@ -26,38 +26,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:text="neues Fach"
             android:ems="10"
             android:id="@+id/neuesFach"
-            android:textColor="?android:attr/colorControlNormal"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:hint="@string/neues_fach" />
 
         <EditText
             android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:text="Kürzel für Icon"
             android:ems="10"
             android:id="@+id/kürzel"
-            android:textColor="?android:attr/colorControlNormal"
             android:textAlignment="center"
-            android:textSize="20sp" />
-
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_input_add"
-            android:id="@+id/fb_ok_stundenplan"
-            app:backgroundTint="?attr/actionModeSplitBackground"
-            android:onClick="onClick"
-            android:paddingRight="4dp"
-            android:layout_marginTop="230dp"
-            android:layout_marginLeft="350dp"
-            android:paddingEnd="4dp" />
+            android:textSize="20sp"
+            android:hint="@string/kuerzel_fuer_icon" />
 
     </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/fb_ok_stundenplan"
+        app:backgroundTint="?attr/actionModeSplitBackground"
+        android:onClick="onClick"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        app:layout_anchorGravity="bottom|right|end" />
 
 </android.support.design.widget.CoordinatorLayout>

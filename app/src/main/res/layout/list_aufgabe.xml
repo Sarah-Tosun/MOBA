@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/icon_image_aufg"
+        android:layout_alignParentTop="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_aufg"
+        android:layout_weight="2"
+        android:layout_alignBottom="@+id/icon_image_aufg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:id="@+id/fach_text_aufg"
+        android:layout_alignTop="@+id/checkbox_aufg"
+        android:layout_toEndOf="@+id/icon_image_aufg"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fach_text_aufg"
+        android:layout_alignStart="@+id/fach_text_aufg"
+        android:id="@+id/beschreibung_textview_aufg" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/checkbox_aufg"
+        android:id="@+id/datum_textview_aufg" />
+
+</RelativeLayout>
