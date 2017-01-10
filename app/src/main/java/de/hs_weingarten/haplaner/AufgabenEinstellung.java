@@ -12,15 +12,21 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import de.hs_weingarten.haplaner.datenbank.Aufgabe;
+import de.hs_weingarten.haplaner.datenbank.AufgabenDBHelper;
 
 /**
  * Created by Sarah on 09.01.2017.
  */
 
 public class AufgabenEinstellung extends AppCompatActivity {
+    private AufgabenDBHelper db;
+
     private DatePicker datePicker;
     private Calendar calendar;
     private TextView dateView;
@@ -28,7 +34,7 @@ public class AufgabenEinstellung extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.einstellungen_aufgaben);
-
+        db=new AufgabenDBHelper(this);
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null){
             actionBar.setHomeButtonEnabled(true);
@@ -81,7 +87,7 @@ public class AufgabenEinstellung extends AppCompatActivity {
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.fb_ok_aufgaben_einst:
-                //IN SQL abspeichern
+                addAufgabe();
                 break;
         }
     }
@@ -99,6 +105,19 @@ public class AufgabenEinstellung extends AppCompatActivity {
                 }
             };
 
+    public void addAufgabe() {
+        //Get Fach and Datum, Beschreibung
+        Spinner spinner = (Spinner)findViewById(R.id.spinner);
+        String fach = spinner.getSelectedItem().toString();
+        TextView textView=(TextView)findViewById(R.id.datum_textView_aufg);
+        String datum = textView.getText().toString();
+        EditText editText= (EditText) findViewById(R.id.beschreibung_edittext_aufg);
+        String beschreibung = editText.getText().toString();
+
+        Aufgabe aufgabe = new Aufgabe(fach, datum,beschreibung);
+        db.addAufgabe(aufgabe);
+        startActivity(new Intent(this,MainActivity.class));
+    }
 }
 
 
