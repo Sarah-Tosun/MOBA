@@ -2583,12 +2583,20 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020049;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f02004a;
         public static final int abc_textfield_search_material=0x7f02004b;
-        public static final int design_fab_background=0x7f02004c;
-        public static final int design_snackbar_background=0x7f02004d;
-        public static final int layout_cell=0x7f02004e;
-        public static final int layout_spinner=0x7f02004f;
-        public static final int layout_zeile1=0x7f020050;
-        public static final int notification_template_icon_bg=0x7f020051;
+        public static final int biologie=0x7f02004c;
+        public static final int chemie=0x7f02004d;
+        public static final int design_fab_background=0x7f02004e;
+        public static final int design_snackbar_background=0x7f02004f;
+        public static final int deutsch=0x7f020050;
+        public static final int englisch=0x7f020051;
+        public static final int erdkunde=0x7f020052;
+        public static final int geschichte=0x7f020053;
+        public static final int layout_cell=0x7f020054;
+        public static final int layout_spinner=0x7f020055;
+        public static final int layout_zeile1=0x7f020056;
+        public static final int mathematik=0x7f020057;
+        public static final int notification_template_icon_bg=0x7f020059;
+        public static final int physik=0x7f020058;
     }
     public static final class id {
         public static final int action0=0x7f0d00b5;
@@ -2615,7 +2623,7 @@ containing a value of this type.
         public static final int auto=0x7f0d0031;
         public static final int beginning=0x7f0d0033;
         public static final int beschreibung_edittext_aufg=0x7f0d0081;
-        public static final int beschreibung_textview_aufg=0x7f0d00b3;
+        public static final int beschreibung_textview_aufg=0x7f0d00b4;
         public static final int bottom=0x7f0d0021;
         public static final int buttonPanel=0x7f0d0046;
         public static final int cancel_action=0x7f0d00b6;
@@ -2633,7 +2641,7 @@ containing a value of this type.
         public static final int custom=0x7f0d0052;
         public static final int customPanel=0x7f0d0051;
         public static final int datum_textView_aufg=0x7f0d007f;
-        public static final int datum_textview_aufg=0x7f0d00b4;
+        public static final int datum_textview_aufg=0x7f0d00b2;
         public static final int decor_content_parent=0x7f0d005b;
         public static final int default_activity_button=0x7f0d0042;
         public static final int design_bottom_sheet=0x7f0d0072;
@@ -2652,7 +2660,7 @@ containing a value of this type.
         public static final int exitUntilCollapsed=0x7f0d0017;
         public static final int expand_activities_button=0x7f0d0040;
         public static final int expanded_menu=0x7f0d0053;
-        public static final int fach_text_aufg=0x7f0d00b2;
+        public static final int fach_text_aufg=0x7f0d00b3;
         public static final int fb_ok_aufgaben=0x7f0d0082;
         public static final int fb_ok_aufgaben_einst=0x7f0d007e;
         public static final int fb_ok_stundenplan=0x7f0d007d;
@@ -2896,11 +2904,19 @@ containing a value of this type.
         public static final int character_counter_pattern=0x7f060026;
         public static final int dienstag=0x7f060027;
         public static final int donnerstag=0x7f060028;
-        public static final int freitag=0x7f060029;
-        public static final int kuerzel_fuer_icon=0x7f06002a;
-        public static final int mittwoch=0x7f06002b;
-        public static final int montag=0x7f06002c;
-        public static final int neues_fach=0x7f06002d;
+        public static final int fach_Biologie=0x7f060029;
+        public static final int fach_Chemie=0x7f06002a;
+        public static final int fach_Deutsch=0x7f06002b;
+        public static final int fach_Englisch=0x7f06002c;
+        public static final int fach_Erdkunde=0x7f06002d;
+        public static final int fach_Geschichte=0x7f06002e;
+        public static final int fach_Mathematik=0x7f06002f;
+        public static final int fach_Physik=0x7f060030;
+        public static final int freitag=0x7f060031;
+        public static final int kuerzel_fuer_icon=0x7f060032;
+        public static final int mittwoch=0x7f060033;
+        public static final int montag=0x7f060034;
+        public static final int neues_fach=0x7f060035;
         public static final int status_bar_notification_info_overflow=0x7f060013;
     }
     public static final class style {

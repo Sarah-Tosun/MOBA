@@ -15,4 +15,12 @@
         <item>Physik</item>
         <item>Erdkunde</item>
     </string-array>
+    <string name="fach_Deutsch">Deutsch</string>
+    <string name="fach_Englisch">Englisch</string>
+    <string name="fach_Mathematik">Mathematik</string>
+    <string name="fach_Biologie">Biologie</string>
+    <string name="fach_Chemie">Chemie</string>
+    <string name="fach_Geschichte">Geschichte</string>
+    <string name="fach_Physik">Physik</string>
+    <string name="fach_Erdkunde">Erdkunde</string>
 </resources>

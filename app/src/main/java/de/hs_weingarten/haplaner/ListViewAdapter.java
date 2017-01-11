@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ public class ListViewAdapter extends BaseAdapter{
         TextView textView1;
         TextView textView2;
         TextView textView3;
+        ImageView imageView;
         CheckBox checkBox;
     }
 
@@ -55,16 +57,17 @@ public class ListViewAdapter extends BaseAdapter{
             holder.textView1 = (TextView) convertView.findViewById(R.id.fach_text_aufg);
             holder.textView2 = (TextView) convertView.findViewById(R.id.datum_textview_aufg);
             holder.textView3 = (TextView) convertView.findViewById(R.id.beschreibung_textview_aufg);
+            holder.imageView = (ImageView) convertView.findViewById(R.id.icon_image_aufg);
             holder.checkBox = (CheckBox) convertView.findViewById(R.id.checkbox_aufg);
             holder.checkBox.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    AufgabenDBHelper db= new AufgabenDBHelper(parent.getContext());
-                    Aufgabe aufgabe=objects.get(position);
-                    db.deleteAufgabe(aufgabe);
-                    objects.remove(position);
+                    AufgabenDBHelper db= new AufgabenDBHelper(parent.getContext()); //Öffne die Datenbank
+                    Aufgabe aufgabe=objects.get(position); //Holt die Aufgabe an der Position
+                    db.deleteAufgabe(aufgabe); //Löscht die Aufgabe aus der DB
+                    objects.remove(position); //Löscht die Aufgabe aus dem Adapter der Anzeige
                     Toast.makeText(parent.getContext(), "Deletet Item: "+position,Toast.LENGTH_SHORT).show();
-                    notifyDataSetChanged();
+                    notifyDataSetChanged(); //Refreshed die UI
                 }
             });
             convertView.setTag(holder);
@@ -74,6 +77,32 @@ public class ListViewAdapter extends BaseAdapter{
         holder.textView1.setText(objects.get(position).getFach());
         holder.textView2.setText(objects.get(position).getDatum());
         holder.textView3.setText(objects.get(position).getBeschreibung());
+        String fach=objects.get(position).getFach();
+        if(fach.equals(convertView.getResources().getString(R.string.fach_Deutsch))){
+            holder.imageView.setImageResource(R.drawable.deutsch);
+        }
+        else if(fach.equals(convertView.getResources().getString(R.string.fach_Englisch))){
+            holder.imageView.setImageResource(R.drawable.englisch);
+        }
+        else if(fach.equals(convertView.getResources().getString(R.string.fach_Erdkunde))){
+            holder.imageView.setImageResource(R.drawable.erdkunde);
+        }
+        else if(fach.equals(convertView.getResources().getString(R.string.fach_Geschichte))){
+            holder.imageView.setImageResource(R.drawable.geschichte);
+        }
+        else if(fach.equals(convertView.getResources().getString(R.string.fach_Chemie))){
+            holder.imageView.setImageResource(R.drawable.chemie);
+        }
+        else if(fach.equals(convertView.getResources().getString(R.string.fach_Biologie))){
+            holder.imageView.setImageResource(R.drawable.biologie);
+        }
+        else if(fach.equals(convertView.getResources().getString(R.string.fach_Mathematik))){
+            holder.imageView.setImageResource(R.drawable.mathematik);
+        }
+        else if(fach.equals(convertView.getResources().getString(R.string.fach_Physik))){
+            holder.imageView.setImageResource(R.drawable.physik);
+        }
+
 
         return convertView;
     }
