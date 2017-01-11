@@ -34,11 +34,14 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
     ListView listView;
 
     //Adapter for the ListView
-    ArrayAdapter<String> adapter;
-    List<String> values;
+    ListViewAdapter adapter;
+    List<String> fach;
+    List<String> datum;
+    List<String> beschreibung;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
@@ -57,9 +60,10 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
         myDataset= new ArrayList<>();
         myDataset=db.getAllAufgaben();
 
-        values=getAllAufgabenAsString();
-
-        adapter=new ArrayAdapter<String>(getActivity(),R.layout.list_aufgabe,R.id.fach_text_aufg,values);
+        fach=getAllAufgabenFachAsString();
+        datum=getAllAufgabenDatumAsString();
+        beschreibung=getAllAufgabenBeschreibungAsString();
+        adapter=new ListViewAdapter(getActivity(),myDataset);
 
         listView.setAdapter(adapter);
         return rootview;
@@ -73,12 +77,26 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
             startActivity(myIntent);
         }
     }
-    private List<String> getAllAufgabenAsString() {
-        List<String> aufgaben = new LinkedList<>();
+    private List<String> getAllAufgabenFachAsString() {
+        List<String> faecher = new LinkedList<>();
         for (int i = 0; i < myDataset.size(); i++) {
-            aufgaben.add(i, myDataset.get(i).getFach());
+            faecher.add(i, myDataset.get(i).getFach());
         }
-        return aufgaben;
+        return faecher;
+    }
+    private List<String> getAllAufgabenDatumAsString() {
+        List<String> datum = new LinkedList<>();
+        for (int i = 0; i < myDataset.size(); i++) {
+            datum.add(i, myDataset.get(i).getFach());
+        }
+        return datum;
+    }
+    private List<String> getAllAufgabenBeschreibungAsString() {
+        List<String> beschreibung = new LinkedList<>();
+        for (int i = 0; i < myDataset.size(); i++) {
+            beschreibung.add(i, myDataset.get(i).getFach());
+        }
+        return beschreibung;
     }
     private void refreshDataset() {
         myDataset = new ArrayList<>();

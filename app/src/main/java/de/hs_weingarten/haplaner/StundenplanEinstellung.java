@@ -19,9 +19,6 @@ import android.widget.Toast;
 
 public class StundenplanEinstellung extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
     Context context;
-    public StundenplanEinstellung(Context context){
-        this.context=context;
-    }
     TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
