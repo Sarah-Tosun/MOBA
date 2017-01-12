@@ -32,7 +32,13 @@
         <activity
             android:name="de.hs_weingarten.haplaner.AufgabenEinstellung"
             android:label="@string/actionBarNameAufgaben"
-            android:parentActivityName="de.hs_weingarten.haplaner.MainActivity" />
+            android:parentActivityName="de.hs_weingarten.haplaner.MainActivity" >
+        </activity>
+        <activity
+            android:name="de.hs_weingarten.haplaner.AufgabeBearbeiten"
+            android:label="@string/actionBarNameAufgaben"
+            android:parentActivityName="de.hs_weingarten.haplaner.MainActivity" >
+        </activity>
     </application>
 
 </manifest>

@@ -15,10 +15,9 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import de.hs_weingarten.haplaner.datenbank.Aufgabe;
-import de.hs_weingarten.haplaner.datenbank.AufgabenDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Aufgaben.Aufgabe;
+import de.hs_weingarten.haplaner.datenbank_Aufgaben.AufgabenDBHelper;
 
 /**
  * Created by Sarah on 09.01.2017.

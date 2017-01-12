@@ -21,7 +21,12 @@
         </activity>
         <activity android:name=".AufgabenEinstellung"
             android:label="@string/actionBarNameAufgaben"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".AufgabeBearbeiten"
+            android:label="@string/actionBarNameAufgaben"
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -1,8 +1,6 @@
 package de.hs_weingarten.haplaner;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -10,17 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import de.hs_weingarten.haplaner.datenbank.Aufgabe;
-import de.hs_weingarten.haplaner.datenbank.AufgabenDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Aufgaben.Aufgabe;
+import de.hs_weingarten.haplaner.datenbank_Aufgaben.AufgabenDBHelper;
 
 public class AufgabenFragment extends Fragment implements View.OnClickListener {
     private FloatingActionButton fab;
@@ -51,6 +47,16 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
         fab= (FloatingActionButton) rootview.findViewById(R.id.fb_ok_aufgaben);
         fab.setOnClickListener(this);
         ListView listView = (ListView) rootview.findViewById(R.id.listview_aufg);
+        //Bearbeiten der Aufgabe mit LongClick
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent aufgabeBearbeiten=new Intent(getActivity(),AufgabeBearbeiten.class);
+                aufgabeBearbeiten.putExtra("aufgabe", db.getAufgabe(position+1));
+                startActivity(aufgabeBearbeiten);
+                return true;
+            }
+        });
         //Hole alle vorhandenen Datensätze
         db= new AufgabenDBHelper(getActivity());
         //Test Aufgabe

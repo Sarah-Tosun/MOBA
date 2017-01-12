@@ -10,11 +10,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import de.hs_weingarten.haplaner.datenbank.Aufgabe;
-import de.hs_weingarten.haplaner.datenbank.AufgabenDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Aufgaben.Aufgabe;
+import de.hs_weingarten.haplaner.datenbank_Aufgaben.AufgabenDBHelper;
 
 /**
  * Created by Patrick P. on 11.01.2017.
