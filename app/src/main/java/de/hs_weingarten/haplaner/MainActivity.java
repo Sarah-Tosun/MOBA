@@ -1,23 +1,11 @@
 package de.hs_weingarten.haplaner;
 
-import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-    ViewPager viewpager;
+public class MainActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
-    }
-    public void onClick(View v) {
-        Intent stundenplanIntent;
-        stundenplanIntent = new Intent(this, StundenplanEinstellung.class);
-        //Klick Zelle Stundenplan
-        startActivity(stundenplanIntent);
-
     }
 
 }

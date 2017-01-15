@@ -88,6 +88,7 @@ public class AufgabenEinstellung extends AppCompatActivity {
         switch(v.getId()) {
             case R.id.fb_ok_aufgaben_einst:
                 addAufgabe();
+                finish();
                 break;
         }
     }
@@ -116,7 +117,6 @@ public class AufgabenEinstellung extends AppCompatActivity {
 
         Aufgabe aufgabe = new Aufgabe(fach, datum,beschreibung);
         db.addAufgabe(aufgabe);
-        startActivity(new Intent(this, MainActivity.class));
 
     }
 }

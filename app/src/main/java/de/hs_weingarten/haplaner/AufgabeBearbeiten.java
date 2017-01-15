@@ -87,11 +87,12 @@ public class AufgabeBearbeiten extends AppCompatActivity{
 
     public void onClick(View v) {
         switch(v.getId()) {
-            case R.id.fb_ok_aufgaben_einst:
+            case R.id.fb_ok_aufgaben_bearbeiten:
 
                 Toast toast = Toast.makeText(getApplicationContext(), "Klick", Toast.LENGTH_SHORT);
                 toast.show();
                 updateAufgabe();
+                finish();
                 break;
         }
     }
@@ -118,7 +119,5 @@ public class AufgabeBearbeiten extends AppCompatActivity{
         EditText editText= (EditText) findViewById(R.id.beschreibung_edittext_aufg);
         aufgabe.setBeschreibung(editText.getText().toString());
         db.updateAufgabe(aufgabe);
-        startActivity(new Intent(this, MainActivity.class));
-
     }
 }
