@@ -2600,10 +2600,10 @@ containing a value of this type.
         public static final int physik=0x7f020059;
     }
     public static final class id {
-        public static final int DI_Fragment=0x7f0d008b;
-        public static final int DO_Fragment=0x7f0d008d;
+        public static final int DI_Fragment=0x7f0d008d;
+        public static final int DO_Fragment=0x7f0d008c;
         public static final int FR_Fragment=0x7f0d008a;
-        public static final int MI_Fragment=0x7f0d008c;
+        public static final int MI_Fragment=0x7f0d008b;
         public static final int MO_Fragment=0x7f0d0089;
         public static final int action0=0x7f0d0094;
         public static final int action_bar=0x7f0d005d;

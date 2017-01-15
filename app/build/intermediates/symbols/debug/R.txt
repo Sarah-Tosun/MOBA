@@ -637,10 +637,10 @@ int drawable layout_zeile1 0x7f020057
 int drawable mathematik 0x7f020058
 int drawable notification_template_icon_bg 0x7f02005a
 int drawable physik 0x7f020059
-int id DI_Fragment 0x7f0d008b
-int id DO_Fragment 0x7f0d008d
+int id DI_Fragment 0x7f0d008d
+int id DO_Fragment 0x7f0d008c
 int id FR_Fragment 0x7f0d008a
-int id MI_Fragment 0x7f0d008c
+int id MI_Fragment 0x7f0d008b
 int id MO_Fragment 0x7f0d0089
 int id action0 0x7f0d0094
 int id action_bar 0x7f0d005d

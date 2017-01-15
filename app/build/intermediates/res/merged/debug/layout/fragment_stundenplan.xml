@@ -37,16 +37,6 @@
         android:layout_marginStart="26dp" />
 
     <TextView
-        android:text="DI"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/DI_Fragment"
-        android:textSize="18sp"
-        android:layout_marginStart="58dp"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/MO_Fragment" />
-
-    <TextView
         android:text="MI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,5 +54,15 @@
         android:textSize="18sp"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/MI_Fragment" />
+
+    <TextView
+        android:text="DI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DI_Fragment"
+        android:textSize="18sp"
+        android:layout_marginStart="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/MO_Fragment" />
 
 </RelativeLayout>
