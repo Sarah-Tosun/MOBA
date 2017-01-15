@@ -10,8 +10,6 @@ import android.widget.ImageView;
 
 import java.util.List;
 
-import de.hs_weingarten.haplaner.datenbank_Aufgaben.Aufgabe;
-import de.hs_weingarten.haplaner.datenbank_Aufgaben.AufgabenDBHelper;
 import de.hs_weingarten.haplaner.datenbank_Faecher.Fach;
 import de.hs_weingarten.haplaner.datenbank_Faecher.FaecherDBHelper;
 
@@ -51,7 +49,7 @@ public class GridViewAdapter extends BaseAdapter{
                     public void onClick(View v) {
                         FaecherDBHelper db= new FaecherDBHelper(parent.getContext()); //Öffne die Datenbank
                         Fach fach=faecher.get(position);
-                        Intent stundenplanEinstellungen=new Intent(context,StundenplanEinstellung.class);
+                        Intent stundenplanEinstellungen=new Intent(context,StundenplanBearbeiten.class);
                         stundenplanEinstellungen.putExtra("fach",fach);
                         context.startActivity(stundenplanEinstellungen);
                     }

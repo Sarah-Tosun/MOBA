@@ -2,19 +2,13 @@ package de.hs_weingarten.haplaner;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
-import android.icu.text.DateFormat;
-import android.icu.text.SimpleDateFormat;
-import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import de.hs_weingarten.haplaner.datenbank_Faecher.Fach;
@@ -26,11 +20,8 @@ import de.hs_weingarten.haplaner.datenbank_Faecher.FaecherDBHelper;
 
 public class StundenplanBearbeiten extends AppCompatActivity{
     private FaecherDBHelper db;
-
-    private Calendar calendar;
-    private TextView dateView;
-    private EditText beschreibungField;
     private Fach fach;
+    private Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +35,7 @@ public class StundenplanBearbeiten extends AppCompatActivity{
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
         //Spinner init
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        spinner = (Spinner) findViewById(R.id.spinner_bearbeiten_stundp);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.fächer, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //Gewähltes Fach als default Value einstellen
@@ -55,28 +46,17 @@ public class StundenplanBearbeiten extends AppCompatActivity{
 
     public void onClick(View v) {
         switch(v.getId()) {
-            case R.id.fb_ok_aufgaben_einst:
-
+            case R.id.fb_ok_stundenplan_bearbeiten_stundp:
                 Toast toast = Toast.makeText(getApplicationContext(), "Klick", Toast.LENGTH_SHORT);
                 toast.show();
                 updateFach();
                 break;
         }
     }
-    private void showDate(int year, int month, int day) {
-        dateView.setText(new StringBuilder().append(day).append("/")
-                .append(month).append("/").append(year));
-    }
-    private DatePickerDialog.OnDateSetListener myDateListener = new DatePickerDialog.OnDateSetListener() {
-        @Override
-        public void onDateSet(DatePicker arg0, int arg1, int arg2, int arg3) {
-            // arg1 = year
-            // arg2 = month
-            // arg3 = day
-            showDate(arg1, arg2+1, arg3);
-        }
-    };
     public void updateFach() {
+        db=new FaecherDBHelper(this);
+        //Get Fach and Datum, Beschreibung
+        fach.setFach(spinner.getSelectedItem().toString());
         db.updateFach(fach);
         startActivity(new Intent(this,MainActivity.class));
     }

@@ -23,9 +23,7 @@ public class FaecherDBHelper extends SQLiteOpenHelper {
     //Aufgaben Columns
     private static final String KEY_ID="id";
     private static final String KEY_FACH="fach";
-    private static final String KEY_TAG ="tag";
-    private static final String KEY_STUNDE ="stunde";
-    private static final String[] COLUMNS={KEY_ID,KEY_FACH, KEY_TAG,KEY_STUNDE};
+    private static final String[] COLUMNS={KEY_ID,KEY_FACH};
 
 
     public FaecherDBHelper(Context context){
@@ -37,16 +35,12 @@ public class FaecherDBHelper extends SQLiteOpenHelper {
         final String SQL_CREATE_FAECHER_TABLE =
                 "CREATE TABLE " + TABLE_FAECHER + " (" +
                         KEY_ID + " INTEGER PRIMARY KEY," +
-                        KEY_FACH + " TEXT," +
-                        KEY_TAG + " INTEGER," +
-                        KEY_STUNDE + " INTEGER" +
+                        KEY_FACH + " TEXT" +
                         " );";
         db.execSQL(SQL_CREATE_FAECHER_TABLE);
         ContentValues cv = new ContentValues();
         for(int i=0;i<25;i++){
             cv.put(KEY_FACH,"");
-            cv.put(KEY_TAG,0);
-            cv.put(KEY_STUNDE,0);
             db.insert(TABLE_FAECHER,null,cv);
             cv.clear();
         }
@@ -63,8 +57,6 @@ public class FaecherDBHelper extends SQLiteOpenHelper {
 
         ContentValues values=new ContentValues();
         values.put(KEY_FACH,fach.getFach());
-        values.put(KEY_TAG,fach.getTag());
-        values.put(KEY_STUNDE,fach.getStunde());
 
         db.insert(TABLE_FAECHER,null,values);
 
@@ -93,8 +85,6 @@ public class FaecherDBHelper extends SQLiteOpenHelper {
         Fach fach = new Fach();
         fach.setId(Integer.parseInt(cursor.getString(0)));
         fach.setFach(cursor.getString(1));
-        fach.setTag(cursor.getInt(2));
-        fach.setStunde(cursor.getInt(3));
 
         // 5. return aufgabe
         return fach;
@@ -116,35 +106,6 @@ public class FaecherDBHelper extends SQLiteOpenHelper {
                 fach = new Fach();
                 fach.setId(Integer.parseInt(cursor.getString(0)));
                 fach.setFach(cursor.getString(1));
-                fach.setTag(cursor.getInt(2));
-                fach.setStunde(cursor.getInt((3)));
-
-                faecher.add(fach);
-            } while (cursor.moveToNext());
-        }
-
-        // 4. return list
-        return faecher;
-    }
-    public List<Fach> getAllFaecherSorted() {
-        List<Fach> faecher = new LinkedList<>();
-
-        // 1. build the query
-        String query = "SELECT * FROM " + TABLE_FAECHER + " ORDER BY " + KEY_TAG + " , " + KEY_STUNDE;
-
-        // 2. get reference to writable DB
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(query, null);
-
-        // 3. go over each row, build aufgabe and add it to list
-        Fach fach;
-        if (cursor.moveToFirst()) {
-            do {
-                fach = new Fach();
-                fach.setId(Integer.parseInt(cursor.getString(0)));
-                fach.setFach(cursor.getString(1));
-                fach.setTag(cursor.getInt(2));
-                fach.setStunde(cursor.getInt((3)));
 
                 faecher.add(fach);
             } while (cursor.moveToNext());
@@ -161,8 +122,6 @@ public class FaecherDBHelper extends SQLiteOpenHelper {
         // 2. create ContentValues to add key "column"/value
         ContentValues values = new ContentValues();
         values.put(KEY_FACH, fach.getFach());
-        values.put(KEY_TAG, fach.getTag());
-        values.put(KEY_STUNDE,fach.getStunde());
 
         // 3. updating row
         int i = db.update(TABLE_FAECHER, //table

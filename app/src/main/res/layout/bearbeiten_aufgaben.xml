@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         app:srcCompat="@android:drawable/ic_menu_save"
-        android:id="@+id/fb_ok_aufgaben_einst"
+        android:id="@+id/fb_ok_aufgaben_bearbeiten"
         app:backgroundTint="?attr/actionModeSplitBackground"
         android:onClick="onClick"
         android:layout_gravity="bottom|right"
