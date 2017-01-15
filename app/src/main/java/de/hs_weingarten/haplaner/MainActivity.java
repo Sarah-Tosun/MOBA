@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 stundenplanIntent.putExtra("ID",v.getId());
                 break;
             case R.id.z2zwei:
+                stundenplanIntent.putExtra("ID",v.getId());
                 break;
             case R.id.z2drei:
                 break;

@@ -17,16 +17,17 @@ import android.widget.Toast;
  * Created by Sarah on 04.01.2017.
  */
 
-public class StundenplanEinstellung extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+public class StundenplanEinstellung extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Context context;
     TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.einstellung_stundenplan);
 
         ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null){
+        if (actionBar != null) {
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
@@ -40,9 +41,9 @@ public class StundenplanEinstellung extends AppCompatActivity implements Adapter
 
     }
 
-    public boolean onOptiosItemSelected(MenuItem item){
+    public boolean onOptiosItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if(id == android.R.id.home){
+        if (id == android.R.id.home) {
             this.finish();
         }
         return super.onOptionsItemSelected(item);
@@ -58,11 +59,27 @@ public class StundenplanEinstellung extends AppCompatActivity implements Adapter
     }
 
     public void onClick(View v) {
-        switch(v.getId()) {
-            case R.id.fb_ok_stundenplan:
-                Toast toast = Toast.makeText(getApplicationContext(), "Klick", Toast.LENGTH_SHORT);
-                toast.show();
-                break;
+        if (v.getId() == R.id.fb_ok_stundenplan) {
+            Intent mIntent = getIntent();
+            int intValue = mIntent.getIntExtra("ID", 0);
+            Intent mainActivity = new Intent(this, MainActivity.class);
+            switch(intValue){
+                case 0:
+                    // error handling
+                    break;
+                case R.id.z2eins:
+                    Toast toast = Toast.makeText(getApplicationContext(), "Klick 1", Toast.LENGTH_SHORT);
+                    toast.show();
+                    break;
+                case R.id.z2zwei:
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Klick 2", Toast.LENGTH_SHORT);
+                    toast2.show();
+                    break;
+
+            }
+            startActivity(mainActivity);
+
+
         }
     }
 }
