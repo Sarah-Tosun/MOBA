@@ -1,250 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/stundenplan_frame">
+    <GridView
+        android:id="@+id/gridview_StundenplanFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="5"
+        android:horizontalSpacing="4dp"
+        android:verticalSpacing="4dp"
+        android:layout_below="@+id/MO_Fragment"
+        android:stretchMode="columnWidth"
+        android:background="#00000000">
+    </GridView>
 
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/tabelle"
-                android:paddingEnd="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="20dp">
+    <TextView
+        android:text="FR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/FR_Fragment"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/zeile1">
+    <TextView
+        android:text="MO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MO_Fragment"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp" />
 
-                    <TextView
-                        android:text="@string/montag"
-                        android:background="@drawable/layout_zeile1"
-                        style="@style/ersteZeile"
-                        android:id="@+id/montag" />
+    <TextView
+        android:text="DI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DI_Fragment"
+        android:textSize="18sp"
+        android:layout_marginStart="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/MO_Fragment" />
 
-                    <TextView
-                        android:text="@string/dienstag"
-                        android:background="@drawable/layout_zeile1"
-                        style="@style/ersteZeile"
-                        android:id="@+id/dienstag" />
+    <TextView
+        android:text="MI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MI_Fragment"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
-                    <TextView
-                        android:text="@string/mittwoch"
-                        android:background="@drawable/layout_zeile1"
-                        style="@style/ersteZeile"
-                        android:id="@+id/mittwoch" />
+    <TextView
+        android:text="DO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:id="@+id/DO_Fragment"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/MI_Fragment" />
 
-                    <TextView
-                        android:text="@string/donnerstag"
-                        android:background="@drawable/layout_zeile1"
-                        style="@style/ersteZeile"
-                        android:id="@+id/donnerstag" />
-
-                    <TextView
-                        android:text="@string/freitag"
-                        android:background="@drawable/layout_zeile1"
-                        style="@style/ersteZeile"
-                        android:id="@+id/freitag" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/zeile2">
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z2eins" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z2zwei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z2drei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z2vier" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z2fünf" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/zeile3">
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z3eins" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z3zwei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z3drei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z3vier" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z3fünf" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/zeile4">
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z4eins" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z4zwei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z4drei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z4vier" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z4fünf" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/zeile5">
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z5eins" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z5zwei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z5drei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z5vier" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z5fünf" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/zeile6">
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z6eins" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z6zwei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z6drei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z6vier" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z6fünf" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/zeile7">
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z7eins" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z7zwei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z7drei" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z7vier" />
-
-                    <TextView
-                        android:background="@drawable/layout_cell"
-                        android:onClick="onClick"
-                        android:id="@+id/z7fünf" />
-                </TableRow>
-
-
-            </TableLayout>
-        </FrameLayout>
-</android.support.design.widget.CoordinatorLayout>
-
-
-
+</RelativeLayout>

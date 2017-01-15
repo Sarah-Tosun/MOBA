@@ -8,16 +8,20 @@
         "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\src\\main\\res\\layout\\einstellung_stundenplan.xml"
     },
     {
+        "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bearbeiten_stundenplan.xml",
+        "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\src\\main\\res\\layout\\bearbeiten_stundenplan.xml"
+    },
+    {
+        "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.0\\res\\layout\\design_navigation_item.xml"
+    },
+    {
         "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bearbeiten_aufgaben.xml",
         "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\src\\main\\res\\layout\\bearbeiten_aufgaben.xml"
     },
     {
         "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
-        "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.0\\res\\layout\\design_navigation_item.xml"
     },
     {
         "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
@@ -112,6 +116,10 @@
         "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.0\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
+        "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\grid_facher.xml",
+        "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\src\\main\\res\\layout\\grid_facher.xml"
+    },
+    {
         "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
@@ -122,6 +130,10 @@
     {
         "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_gridlayout_stundenplan.xml",
+        "source": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\src\\main\\res\\layout\\fragment_gridlayout_stundenplan.xml"
     },
     {
         "merged": "F:\\User\\Downloads\\HAPlaner-20161221T144729Z\\MobileAnwendunge1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",

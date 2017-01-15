@@ -1,0 +1,197 @@
+package de.hs_weingarten.haplaner.datenbank_Faecher;
+
+/**
+ * Created by Patrick P. on 09.01.2017.
+ */
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.LinkedList;
+import java.util.List;
+
+
+
+public class FaecherDBHelper extends SQLiteOpenHelper {
+    private static final String DATABASE_NAME = "faecherDB";
+    private static final int DATABASE_VERSION = 4;
+    private static final String TABLE_FAECHER="faecher";
+
+    //Aufgaben Columns
+    private static final String KEY_ID="id";
+    private static final String KEY_FACH="fach";
+    private static final String KEY_TAG ="tag";
+    private static final String KEY_STUNDE ="stunde";
+    private static final String[] COLUMNS={KEY_ID,KEY_FACH, KEY_TAG,KEY_STUNDE};
+
+
+    public FaecherDBHelper(Context context){
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        final String SQL_CREATE_FAECHER_TABLE =
+                "CREATE TABLE " + TABLE_FAECHER + " (" +
+                        KEY_ID + " INTEGER PRIMARY KEY," +
+                        KEY_FACH + " TEXT," +
+                        KEY_TAG + " INTEGER," +
+                        KEY_STUNDE + " INTEGER" +
+                        " );";
+        db.execSQL(SQL_CREATE_FAECHER_TABLE);
+        ContentValues cv = new ContentValues();
+        for(int i=0;i<25;i++){
+            cv.put(KEY_FACH,"");
+            cv.put(KEY_TAG,0);
+            cv.put(KEY_STUNDE,0);
+            db.insert(TABLE_FAECHER,null,cv);
+            cv.clear();
+        }
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_FAECHER);
+        onCreate(db);
+    }
+
+    public void addFach(Fach fach){
+        SQLiteDatabase db=this.getWritableDatabase();
+
+        ContentValues values=new ContentValues();
+        values.put(KEY_FACH,fach.getFach());
+        values.put(KEY_TAG,fach.getTag());
+        values.put(KEY_STUNDE,fach.getStunde());
+
+        db.insert(TABLE_FAECHER,null,values);
+
+        db.close();
+    }
+    public Fach getFach(int id) {
+        // 1. get reference to readable DB
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // 2. build query
+        Cursor cursor =
+                db.query(TABLE_FAECHER, // a. table
+                        COLUMNS, // b. column names
+                        " id = ?", // c. selections
+                        new String[]{String.valueOf(id)}, // d. selections args
+                        null, // e. group by
+                        null, // f. having
+                        null, // g. order by
+                        null); // h. limit
+
+        // 3. if we got results get the first one
+        if (cursor != null)
+            cursor.moveToFirst();
+
+        // 4. build aufgaben object
+        Fach fach = new Fach();
+        fach.setId(Integer.parseInt(cursor.getString(0)));
+        fach.setFach(cursor.getString(1));
+        fach.setTag(cursor.getInt(2));
+        fach.setStunde(cursor.getInt(3));
+
+        // 5. return aufgabe
+        return fach;
+    }
+    public List<Fach> getAllFaecher() {
+        List<Fach> faecher = new LinkedList<>();
+
+        // 1. build the query
+        String query = "SELECT * FROM " + TABLE_FAECHER;
+
+        // 2. get reference to writable DB
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+
+        // 3. go over each row, build aufgabe and add it to list
+        Fach fach;
+        if (cursor.moveToFirst()) {
+            do {
+                fach = new Fach();
+                fach.setId(Integer.parseInt(cursor.getString(0)));
+                fach.setFach(cursor.getString(1));
+                fach.setTag(cursor.getInt(2));
+                fach.setStunde(cursor.getInt((3)));
+
+                faecher.add(fach);
+            } while (cursor.moveToNext());
+        }
+
+        // 4. return list
+        return faecher;
+    }
+    public List<Fach> getAllFaecherSorted() {
+        List<Fach> faecher = new LinkedList<>();
+
+        // 1. build the query
+        String query = "SELECT * FROM " + TABLE_FAECHER + " ORDER BY " + KEY_TAG + " , " + KEY_STUNDE;
+
+        // 2. get reference to writable DB
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(query, null);
+
+        // 3. go over each row, build aufgabe and add it to list
+        Fach fach;
+        if (cursor.moveToFirst()) {
+            do {
+                fach = new Fach();
+                fach.setId(Integer.parseInt(cursor.getString(0)));
+                fach.setFach(cursor.getString(1));
+                fach.setTag(cursor.getInt(2));
+                fach.setStunde(cursor.getInt((3)));
+
+                faecher.add(fach);
+            } while (cursor.moveToNext());
+        }
+
+        // 4. return list
+        return faecher;
+    }
+    public int updateFach(Fach fach) {
+
+        // 1. get reference to writable DB
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // 2. create ContentValues to add key "column"/value
+        ContentValues values = new ContentValues();
+        values.put(KEY_FACH, fach.getFach());
+        values.put(KEY_TAG, fach.getTag());
+        values.put(KEY_STUNDE,fach.getStunde());
+
+        // 3. updating row
+        int i = db.update(TABLE_FAECHER, //table
+                values, // column/value
+                KEY_ID + " = ?", // selections
+                new String[]{String.valueOf(fach.getId())}); //selection args
+
+        // 4. close
+        db.close();
+
+        return i;
+    }
+    public void deleteFach(Fach fach) {
+
+        // 1. get reference to writable DB
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        // 2. delete
+        db.delete(TABLE_FAECHER, //table name
+                KEY_ID + " = ?",  // selections
+                new String[]{String.valueOf(fach.getId())}); //selections args
+
+        // 3. close
+        db.close();
+    }
+    public void dropTable(){
+        // 1. get reference to writable DB
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_FAECHER );
+    }
+}

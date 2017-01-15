@@ -57,6 +57,7 @@ public class ListViewAdapter extends BaseAdapter{
             holder.textView2 = (TextView) convertView.findViewById(R.id.datum_textview_aufg);
             holder.textView3 = (TextView) convertView.findViewById(R.id.beschreibung_textview_aufg);
             holder.imageView = (ImageView) convertView.findViewById(R.id.icon_image_aufg);
+            //Checkbox Listener
             holder.checkBox = (CheckBox) convertView.findViewById(R.id.checkbox_aufg);
             holder.checkBox.setOnClickListener(new View.OnClickListener() {
                 @Override

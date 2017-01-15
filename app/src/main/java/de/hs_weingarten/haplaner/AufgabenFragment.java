@@ -23,7 +23,6 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
     private CheckBox checkBox;
     private AufgabenDBHelper db;
 
-    //List of Books
     private List<Aufgabe> myDataset;
 
     //List to show in App
@@ -46,7 +45,7 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
         //Floating ActionButton Listener
         fab= (FloatingActionButton) rootview.findViewById(R.id.fb_ok_aufgaben);
         fab.setOnClickListener(this);
-        ListView listView = (ListView) rootview.findViewById(R.id.listview_aufg);
+        listView = (ListView) rootview.findViewById(R.id.listview_aufg);
         //Bearbeiten der Aufgabe mit LongClick
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -59,13 +58,9 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
         });
         //Hole alle vorhandenen Datensätze
         db= new AufgabenDBHelper(getActivity());
-        //Test Aufgabe
-        //Aufgabe aufg = new Aufgabe("asd", "TestISBN","dsad");
-        //db.addAufgabe(aufg);
-
         myDataset= new ArrayList<>();
         myDataset=db.getAllAufgaben();
-
+        //Konvertiere alles in einen String
         fach=getAllAufgabenFachAsString();
         datum=getAllAufgabenDatumAsString();
         beschreibung=getAllAufgabenBeschreibungAsString();
