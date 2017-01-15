@@ -3,183 +3,183 @@
 
     <item
         is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.0\jars\classes.jar"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4157816e81f0820983957687e9a6f4c1cea0f1e5">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.1.0_3d3681124b85e9eb5e6240f02d371bf37bf2ef26\classes.dex" />
+        sha1="3ce946570067621755311df273fabfe2a70a536f">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_de8dd02034ea335ff46a4f8570d99400aa18c504\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_a2e79cda95119253c99fb11b203cec64270242b2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9340c4f95a4e3916c9ad70296e24576743743712">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.1.0_8fa98d8f2053fc0800cd8105c4358366d69334b3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_82c054ec11aee1836a25c6dc9bff3abe25c44b6b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8c854b30eca6c442fe842e66cd3b58c5dd08996f">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.1.0_0698af645901b79b6318f328999776b35997029d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\design\24.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8620c018c108eed501bbdb85324b79136373ea44">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.1.0_e1adff2841fb371ea96697159096178e0786c042\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="26f017fad57c7875fc7d708e9ecc55d9668329ad">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0dc203c9f5309873c080c9d02c85aad6f67cf2a8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_b1242b0546c853ed9e315b5bc76e72e7172052ae\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_74aa16611f8eb9461c9511f25e8ebb3d17b4c088\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_406da6efc69665295ecd19aabc17c956bcfece80\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_196092c2cc868f376ab905bfde7e30a93a4b18bc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_9b4494d833fc7bab9fd498426956078c8f482d5c\classes.dex" />
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_f66869132b57d96285e1e547a6cd122c7a31217a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_4cebc16c3ab34e3a3134a6396d0d48431396f1fd\classes.dex" />
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_21ec673373c0e2e7077227528ab3c5de3faaea92\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.1.0\jars\classes.jar"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="83b9d1fd6dd3791184d6b60d3a130a993e2987e3">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.1.0_3a2baa4930adb2cc78bf347a0b84b9f6502c9e71\classes.dex" />
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.1.0_760d30a81dff1284280012d78b1aa39a6ba6f309\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_e6c369ab87ea30f486f21b8fd8ac14d8c62e1deb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_8dc6209143bb33289a9db834bcb8cf7c4e7ad876\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\paduf\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_e6e3783e718d657f118e7ea058cda86525b863a5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d94ce97cc378daff196f67cab3066f8210319cda\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\jars\classes.jar"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="ba8e8860f7e033c3a503b682337a4bafdf56e6ee">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.1.0_2ed6ef468f6cc5dedf6e958a02d6bfd9265dd24b\classes.dex" />
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.1.0_f8f6ac9439dec35925830599f12890a53c7034d2\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e7606dd124d896c69802c025553cd494b92b9058">
-        <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_162a4623209bb2b2e2ae71e7467bd587f21a7629\classes.dex" />
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_49409419e425720069b0340a991dd087783b97cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_558cca5ef50974113811d3d1fb94322ed1424ddb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\design\24.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8620c018c108eed501bbdb85324b79136373ea44">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.1.0_40dc7184340330faeaad6e541fddc1fc1badf60b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9340c4f95a4e3916c9ad70296e24576743743712">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.1.0_2e386616a7ec65339e220a0267d7091e7fa5d15d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_35c1a56abbe710fd654143e13956305a7d195e7f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_6b854c55ca77cc06b16551e7a54f47adf33a88e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8c854b30eca6c442fe842e66cd3b58c5dd08996f">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.1.0_d96b7b301f47de1d66f7b1603ebe7a8c47229f51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_1c75476e80a07c0565b1106db83b9f697ac94a38\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b4f60767b37283a9f0bb9ae801d80a347083863a">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_bb83e23db358010e5faac835516df2e5d923c63b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_af4891b6993df069b0e2fd8aeed53cdf87717ad7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_c83cef61329a127529240b121780942f461e22ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_f7dd4718014fda61e4af5c02bd627c837ae3f1ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4157816e81f0820983957687e9a6f4c1cea0f1e5">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.1.0_70ece84c7a88ae6b8a84cfe4e0d3b87a81499726\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_ffdf9ebbc143fcdbb7bd21cc298b509082474414\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Sarah\AndroidStudioProjects\HAPlaner\MOBA1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_fe8c6d4fa286cdd4e3622ae5c1252825c08d1835\classes.dex" />
     </item>
 
 </items>

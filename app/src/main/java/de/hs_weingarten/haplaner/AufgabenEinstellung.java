@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.icu.util.Calendar;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -115,7 +116,8 @@ public class AufgabenEinstellung extends AppCompatActivity {
 
         Aufgabe aufgabe = new Aufgabe(fach, datum,beschreibung);
         db.addAufgabe(aufgabe);
-        startActivity(new Intent(this,MainActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
+
     }
 }
 

@@ -9,54 +9,41 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import de.hs_weingarten.haplaner.datenbank_Aufgaben.AufgabenDBHelper;
-import de.hs_weingarten.haplaner.datenbank_Faecher.Fach;
-import de.hs_weingarten.haplaner.datenbank_Faecher.FaecherDBHelper;
-
 /**
  * Created by Sarah on 04.01.2017.
- * MOAB 1
  */
 
-public class StundenplanEinstellung extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+public class StundenplanEinstellung extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Context context;
     TextView textView;
-    Fach fach;
 
-    private FaecherDBHelper db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.einstellung_stundenplan);
-        Intent myIntent =getIntent();
-        fach=(Fach)myIntent.getSerializableExtra("fach");
 
         ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null){
+        if (actionBar != null) {
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+        Intent myIntent = getIntent();
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.fächer, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-        if(!fach.getFach().equals("")){
-            int spinnerPosition=adapter.getPosition(fach.getFach());
-            spinner.setSelection(spinnerPosition);
-        }
-
+        //spinner.setOnItemClickListener((AdapterView.OnItemClickListener) this);
 
 
     }
 
-    public boolean onOptiosItemSelected(MenuItem item){
+    public boolean onOptiosItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if(id == android.R.id.home){
+        if (id == android.R.id.home) {
             this.finish();
         }
         return super.onOptionsItemSelected(item);
@@ -72,21 +59,28 @@ public class StundenplanEinstellung extends AppCompatActivity implements Adapter
     }
 
     public void onClick(View v) {
-        switch(v.getId()) {
-            case R.id.fb_ok_stundenplan:
-                Toast toast = Toast.makeText(getApplicationContext(), "Klick", Toast.LENGTH_SHORT);
-                toast.show();
-                updateFach();
-                break;
+        if (v.getId() == R.id.fb_ok_stundenplan) {
+            Intent mIntent = getIntent();
+            int intValue = mIntent.getIntExtra("ID", 0);
+            Intent mainActivity = new Intent(this, MainActivity.class);
+            switch(intValue){
+                case 0:
+                    // error handling
+                    break;
+                case R.id.z2eins:
+                    Toast toast = Toast.makeText(getApplicationContext(), "Klick 1", Toast.LENGTH_SHORT);
+                    toast.show();
+                    break;
+                case R.id.z2zwei:
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Klick 2", Toast.LENGTH_SHORT);
+                    toast2.show();
+                    break;
+
+            }
+            startActivity(mainActivity);
+
+
         }
-    }
-    public void updateFach() {
-        db=new FaecherDBHelper(this);
-        //Get Fach and Datum, Beschreibung
-        Spinner spinner = (Spinner)findViewById(R.id.spinner);
-        fach.setFach(spinner.getSelectedItem().toString());
-        db.updateFach(fach);
-        startActivity(new Intent(this,MainActivity.class));
     }
 }
 

@@ -39,6 +39,7 @@ public class AufgabeBearbeiten extends AppCompatActivity{
     private EditText beschreibungField;
     private int year, month, day;
     private Aufgabe aufgabe;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,6 +118,7 @@ public class AufgabeBearbeiten extends AppCompatActivity{
         EditText editText= (EditText) findViewById(R.id.beschreibung_edittext_aufg);
         aufgabe.setBeschreibung(editText.getText().toString());
         db.updateAufgabe(aufgabe);
-        startActivity(new Intent(this,MainActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
+
     }
 }
