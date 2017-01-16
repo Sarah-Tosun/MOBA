@@ -635,8 +635,9 @@ int drawable layout_cell 0x7f020055
 int drawable layout_spinner 0x7f020056
 int drawable layout_zeile1 0x7f020057
 int drawable mathematik 0x7f020058
-int drawable notification_template_icon_bg 0x7f02005a
+int drawable notification_template_icon_bg 0x7f02005b
 int drawable physik 0x7f020059
+int drawable plus 0x7f02005a
 int id DI_Fragment 0x7f0d008e
 int id DO_Fragment 0x7f0d008d
 int id FR_Fragment 0x7f0d008b

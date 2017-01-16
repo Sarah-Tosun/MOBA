@@ -2596,8 +2596,9 @@ containing a value of this type.
         public static final int layout_spinner=0x7f020056;
         public static final int layout_zeile1=0x7f020057;
         public static final int mathematik=0x7f020058;
-        public static final int notification_template_icon_bg=0x7f02005a;
+        public static final int notification_template_icon_bg=0x7f02005b;
         public static final int physik=0x7f020059;
+        public static final int plus=0x7f02005a;
     }
     public static final class id {
         public static final int DI_Fragment=0x7f0d008e;
