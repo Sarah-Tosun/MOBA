@@ -66,10 +66,11 @@ public class ListViewAdapter extends BaseAdapter{
                 public void onClick(View v) {
                     AufgabenDBHelper db= new AufgabenDBHelper(parent.getContext()); //Öffne die Datenbank
                     Aufgabe aufgabe=objects.get(position); //Holt die Aufgabe an der Position
+                    objects.remove(position);//Löscht die Aufgabe aus dem Adapter der Anzeige
                     db.deleteAufgabe(aufgabe); //Löscht die Aufgabe aus der DB
-                    objects.remove(position); //Löscht die Aufgabe aus dem Adapter der Anzeige
                     Toast.makeText(parent.getContext(), "Deletet Item: "+position,Toast.LENGTH_SHORT).show();
                     notifyDataSetChanged(); //Refreshed die UI
+                    ((CheckBox)v).setChecked(false);
                 }
             });
             convertView.setTag(holder);
@@ -104,9 +105,6 @@ public class ListViewAdapter extends BaseAdapter{
         else if(fach.equals(convertView.getResources().getString(R.string.fach_Physik))){
             holder.imageView.setImageResource(R.drawable.physik);
         }
-
-
-
         return convertView;
     }
     public void refresh(List<Aufgabe> myDataset) {
