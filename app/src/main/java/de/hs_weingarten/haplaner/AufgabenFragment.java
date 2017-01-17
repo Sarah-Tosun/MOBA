@@ -34,6 +34,7 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
     List<String> datum;
     List<String> beschreibung;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +79,13 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
             startActivity(myIntent);
         }
     }
+    @Override
+    public void onResume(){
+        super.onResume();
+        myDataset.clear();
+        myDataset=db.getAllAufgaben();
+        adapter.refresh(myDataset);
+    }
     private List<String> getAllAufgabenFachAsString() {
         List<String> faecher = new LinkedList<>();
         for (int i = 0; i < myDataset.size(); i++) {
@@ -98,11 +106,6 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
             beschreibung.add(i, myDataset.get(i).getFach());
         }
         return beschreibung;
-    }
-    private void refreshDataset() {
-        myDataset = new ArrayList<>();
-        myDataset = db.getAllAufgaben();
-        adapter.notifyDataSetChanged();
     }
 
 }

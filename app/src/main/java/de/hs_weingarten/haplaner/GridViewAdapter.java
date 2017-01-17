@@ -83,9 +83,16 @@ public class GridViewAdapter extends BaseAdapter{
             else if(fach.equals(convertView.getResources().getString(R.string.fach_Physik))){
                 holder.imageView.setImageResource(R.drawable.physik);
             }
+            else if(fach.equals(convertView.getResources().getString(R.string.freistunde))){
+                holder.imageView.setImageResource(R.drawable.plus);
+            }
 
 
 
             return convertView;
         }
+    public void refresh(List<Fach> myDataset) {
+        faecher=myDataset;
+        notifyDataSetChanged();
+    }
 }

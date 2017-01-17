@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="8ad3768a9192690ffb7243db05317a8cf3c3cb34">
+        sha1="8c664440e9cfa90da4891af57ba8fca752445f98">
         <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0dc203c9f5309873c080c9d02c85aad6f67cf2a8\classes.dex" />
     </item>
     <item
@@ -178,7 +178,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="16059fe7eddee36cde430d72ceaeffc3e4610cfb">
+        sha1="e743d7346a0c775cc47687644dd84c39e4eb961e">
         <dex dex="F:\User\Downloads\HAPlaner-20161221T144729Z\MobileAnwendunge1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_162a4623209bb2b2e2ae71e7467bd587f21a7629\classes.dex" />
     </item>
 

@@ -43,5 +43,12 @@ public class StundenplanFragment extends Fragment {
         gridView.setAdapter(adapter);
         return rootView;
     }
+    @Override
+    public void onResume(){
+        super.onResume();
+        myDataset.clear();
+        myDataset=db.getAllFaecher();
+        adapter.refresh(myDataset);
+    }
 
 }

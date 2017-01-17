@@ -23,6 +23,8 @@ public class ListViewAdapter extends BaseAdapter{
     private LayoutInflater inflater;
     private List<Aufgabe> objects;
 
+
+
     private class ViewHolder {
         TextView textView1;
         TextView textView2;
@@ -104,6 +106,11 @@ public class ListViewAdapter extends BaseAdapter{
         }
 
 
+
         return convertView;
+    }
+    public void refresh(List<Aufgabe> myDataset) {
+        objects=myDataset;
+        notifyDataSetChanged();
     }
 }
