@@ -56,6 +56,9 @@ public class AufgabeBearbeiten extends AppCompatActivity{
             Date startDate= dateFormat.parse(aufgabe.getDatum());
             calendar= Calendar.getInstance();
             calendar.setTime(startDate);
+            year=calendar.get(Calendar.YEAR);
+            month=calendar.get(Calendar.MONTH);
+            day=calendar.get(Calendar.DATE);
 
         }
         catch(ParseException e){
@@ -71,7 +74,7 @@ public class AufgabeBearbeiten extends AppCompatActivity{
         changeDatum.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                DatePickerDialog datePickerdialog=new DatePickerDialog(AufgabeBearbeiten.this,myDateListener,calendar.get(Calendar.DATE),calendar.get(Calendar.MONTH),calendar.get(Calendar.YEAR));
+                DatePickerDialog datePickerdialog=new DatePickerDialog(AufgabeBearbeiten.this,myDateListener,year,month,day);
                 datePickerdialog.show();
             }
         });

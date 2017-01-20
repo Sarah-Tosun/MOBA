@@ -2585,19 +2585,21 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f02004b;
         public static final int add=0x7f02004c;
         public static final int biologie=0x7f02004d;
-        public static final int chemie=0x7f02004e;
-        public static final int design_fab_background=0x7f02004f;
-        public static final int design_snackbar_background=0x7f020050;
-        public static final int deutsch=0x7f020051;
-        public static final int englisch=0x7f020052;
-        public static final int erdkunde=0x7f020053;
-        public static final int geschichte=0x7f020054;
-        public static final int layout_cell=0x7f020055;
-        public static final int layout_spinner=0x7f020056;
-        public static final int layout_zeile1=0x7f020057;
-        public static final int mathematik=0x7f020058;
-        public static final int notification_template_icon_bg=0x7f02005a;
-        public static final int physik=0x7f020059;
+        public static final int biologie2=0x7f02004e;
+        public static final int chemie=0x7f02004f;
+        public static final int design_fab_background=0x7f020050;
+        public static final int design_snackbar_background=0x7f020051;
+        public static final int deutsch=0x7f020052;
+        public static final int englisch=0x7f020053;
+        public static final int erdkunde=0x7f020054;
+        public static final int geschichte=0x7f020055;
+        public static final int layout_cell=0x7f020056;
+        public static final int layout_spinner=0x7f020057;
+        public static final int layout_zeile1=0x7f020058;
+        public static final int mathematik=0x7f020059;
+        public static final int notification_template_icon_bg=0x7f02005c;
+        public static final int physik=0x7f02005a;
+        public static final int plus=0x7f02005b;
     }
     public static final class id {
         public static final int DI_Fragment=0x7f0d008e;
@@ -2816,22 +2818,21 @@ containing a value of this type.
         public static final int einstellung_stundenplan=0x7f040029;
         public static final int einstellungen_aufgaben=0x7f04002a;
         public static final int fragment_aufgaben=0x7f04002b;
-        public static final int fragment_gridlayout_stundenplan=0x7f04002c;
-        public static final int fragment_stundenplan=0x7f04002d;
-        public static final int grid_facher=0x7f04002e;
-        public static final int list_aufgabe=0x7f04002f;
-        public static final int notification_media_action=0x7f040030;
-        public static final int notification_media_cancel_action=0x7f040031;
-        public static final int notification_template_big_media=0x7f040032;
-        public static final int notification_template_big_media_narrow=0x7f040033;
-        public static final int notification_template_lines=0x7f040034;
-        public static final int notification_template_media=0x7f040035;
-        public static final int notification_template_part_chronometer=0x7f040036;
-        public static final int notification_template_part_time=0x7f040037;
-        public static final int select_dialog_item_material=0x7f040038;
-        public static final int select_dialog_multichoice_material=0x7f040039;
-        public static final int select_dialog_singlechoice_material=0x7f04003a;
-        public static final int support_simple_spinner_dropdown_item=0x7f04003b;
+        public static final int fragment_stundenplan=0x7f04002c;
+        public static final int grid_facher=0x7f04002d;
+        public static final int list_aufgabe=0x7f04002e;
+        public static final int notification_media_action=0x7f04002f;
+        public static final int notification_media_cancel_action=0x7f040030;
+        public static final int notification_template_big_media=0x7f040031;
+        public static final int notification_template_big_media_narrow=0x7f040032;
+        public static final int notification_template_lines=0x7f040033;
+        public static final int notification_template_media=0x7f040034;
+        public static final int notification_template_part_chronometer=0x7f040035;
+        public static final int notification_template_part_time=0x7f040036;
+        public static final int select_dialog_item_material=0x7f040037;
+        public static final int select_dialog_multichoice_material=0x7f040038;
+        public static final int select_dialog_singlechoice_material=0x7f040039;
+        public static final int support_simple_spinner_dropdown_item=0x7f04003a;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -2885,11 +2886,12 @@ containing a value of this type.
         public static final int fach_Geschichte=0x7f06002e;
         public static final int fach_Mathematik=0x7f06002f;
         public static final int fach_Physik=0x7f060030;
-        public static final int freitag=0x7f060031;
-        public static final int kuerzel_fuer_icon=0x7f060032;
-        public static final int mittwoch=0x7f060033;
-        public static final int montag=0x7f060034;
-        public static final int neues_fach=0x7f060035;
+        public static final int freistunde=0x7f060031;
+        public static final int freitag=0x7f060032;
+        public static final int kuerzel_fuer_icon=0x7f060033;
+        public static final int mittwoch=0x7f060034;
+        public static final int montag=0x7f060035;
+        public static final int neues_fach=0x7f060036;
         public static final int status_bar_notification_info_overflow=0x7f060013;
     }
     public static final class style {

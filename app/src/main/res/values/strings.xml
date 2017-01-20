@@ -14,6 +14,7 @@
         <item>Geschichte</item>
         <item>Physik</item>
         <item>Erdkunde</item>
+        <item>Freistunde</item>
     </string-array>
     <string name="fach_Deutsch">Deutsch</string>
     <string name="fach_Englisch">Englisch</string>
@@ -23,4 +24,5 @@
     <string name="fach_Geschichte">Geschichte</string>
     <string name="fach_Physik">Physik</string>
     <string name="fach_Erdkunde">Erdkunde</string>
+    <string name="freistunde">Freistunde</string>
 </resources>

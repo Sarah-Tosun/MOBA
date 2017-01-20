@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        app:srcCompat="@drawable/add"
+        app:srcCompat="@drawable/plus"
         android:id="@+id/icon_image_stundp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"

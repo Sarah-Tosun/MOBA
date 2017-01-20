@@ -58,6 +58,7 @@ public class StundenplanBearbeiten extends AppCompatActivity{
         //Get Fach and Datum, Beschreibung
         fach.setFach(spinner.getSelectedItem().toString());
         db.updateFach(fach);
-        startActivity(new Intent(this,MainActivity.class));
+        finish();
+        //startActivity(new Intent(this,MainActivity.class));
     }
 }

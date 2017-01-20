@@ -9,6 +9,7 @@
         <item>Geschichte</item>
         <item>Physik</item>
         <item>Erdkunde</item>
+        <item>Freistunde</item>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -328,6 +329,7 @@
     <string name="fach_Geschichte">Geschichte</string>
     <string name="fach_Mathematik">Mathematik</string>
     <string name="fach_Physik">Physik</string>
+    <string name="freistunde">Freistunde</string>
     <string name="freitag">Freitag</string>
     <string name="kuerzel_fuer_icon">Kürzel für Icon</string>
     <string name="mittwoch">Mittwoch</string>
