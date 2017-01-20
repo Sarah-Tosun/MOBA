@@ -6,7 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -24,6 +26,8 @@ public class GridViewAdapter extends BaseAdapter{
 
         private class ViewHolder {
             ImageView imageView;
+            EditText neuesFach;
+            EditText kurzZeichen;
         }
         public GridViewAdapter(Context context, List<Fach> faecher) {
             inflater = LayoutInflater.from(context);
@@ -43,6 +47,8 @@ public class GridViewAdapter extends BaseAdapter{
                 holder = new ViewHolder();
                 convertView = inflater.inflate(R.layout.grid_facher,null);
                 holder.imageView = (ImageView) convertView.findViewById(R.id.icon_image_stundp);
+                holder.neuesFach = (EditText) convertView.findViewById(R.id.neuesFach);
+                holder.kurzZeichen = (EditText) convertView.findViewById(R.id.kürzel);
                 //ImageView Listener
                 holder.imageView.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -86,8 +92,9 @@ public class GridViewAdapter extends BaseAdapter{
             else if(fach.equals(convertView.getResources().getString(R.string.freistunde))){
                 holder.imageView.setImageResource(R.drawable.plus);
             }
-
-
+            else if(fach.equals(convertView.getResources().getString(R.string.leer))){
+                // hole den Text aus Kürzel und setzte es in die Tabelle
+            }
 
             return convertView;
         }

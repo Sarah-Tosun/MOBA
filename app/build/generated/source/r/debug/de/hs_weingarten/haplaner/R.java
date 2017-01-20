@@ -2888,9 +2888,10 @@ containing a value of this type.
         public static final int freistunde=0x7f060031;
         public static final int freitag=0x7f060032;
         public static final int kuerzel_fuer_icon=0x7f060033;
-        public static final int mittwoch=0x7f060034;
-        public static final int montag=0x7f060035;
-        public static final int neues_fach=0x7f060036;
+        public static final int leer=0x7f060034;
+        public static final int mittwoch=0x7f060035;
+        public static final int montag=0x7f060036;
+        public static final int neues_fach=0x7f060037;
         public static final int status_bar_notification_info_overflow=0x7f060013;
     }
     public static final class style {

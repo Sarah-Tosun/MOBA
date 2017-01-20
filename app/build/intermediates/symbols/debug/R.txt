@@ -917,9 +917,10 @@ int string fach_Physik 0x7f060030
 int string freistunde 0x7f060031
 int string freitag 0x7f060032
 int string kuerzel_fuer_icon 0x7f060033
-int string mittwoch 0x7f060034
-int string montag 0x7f060035
-int string neues_fach 0x7f060036
+int string leer 0x7f060034
+int string mittwoch 0x7f060035
+int string montag 0x7f060036
+int string neues_fach 0x7f060037
 int string status_bar_notification_info_overflow 0x7f060013
 int style AlertDialog_AppCompat 0x7f08008d
 int style AlertDialog_AppCompat_Light 0x7f08008e
