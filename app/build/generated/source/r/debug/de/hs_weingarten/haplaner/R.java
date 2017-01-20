@@ -2585,21 +2585,20 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f02004b;
         public static final int add=0x7f02004c;
         public static final int biologie=0x7f02004d;
-        public static final int biologie2=0x7f02004e;
-        public static final int chemie=0x7f02004f;
-        public static final int design_fab_background=0x7f020050;
-        public static final int design_snackbar_background=0x7f020051;
-        public static final int deutsch=0x7f020052;
-        public static final int englisch=0x7f020053;
-        public static final int erdkunde=0x7f020054;
-        public static final int geschichte=0x7f020055;
-        public static final int layout_cell=0x7f020056;
-        public static final int layout_spinner=0x7f020057;
-        public static final int layout_zeile1=0x7f020058;
-        public static final int mathematik=0x7f020059;
-        public static final int notification_template_icon_bg=0x7f02005c;
-        public static final int physik=0x7f02005a;
-        public static final int plus=0x7f02005b;
+        public static final int chemie=0x7f02004e;
+        public static final int design_fab_background=0x7f02004f;
+        public static final int design_snackbar_background=0x7f020050;
+        public static final int deutsch=0x7f020051;
+        public static final int englisch=0x7f020052;
+        public static final int erdkunde=0x7f020053;
+        public static final int geschichte=0x7f020054;
+        public static final int layout_cell=0x7f020055;
+        public static final int layout_spinner=0x7f020056;
+        public static final int layout_zeile1=0x7f020057;
+        public static final int mathematik=0x7f020058;
+        public static final int notification_template_icon_bg=0x7f02005b;
+        public static final int physik=0x7f020059;
+        public static final int plus=0x7f02005a;
     }
     public static final class id {
         public static final int DI_Fragment=0x7f0d008e;
