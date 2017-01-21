@@ -8,12 +8,11 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.List;
 
 import de.hs_weingarten.haplaner.datenbank_Faecher.Fach;
-import de.hs_weingarten.haplaner.datenbank_Faecher.FaecherDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Faecher.SpinnerDBHelper;
 
 /**
  * Created by Patrick P. on 14.01.2017.
@@ -53,7 +52,7 @@ public class GridViewAdapter extends BaseAdapter{
                 holder.imageView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        FaecherDBHelper db= new FaecherDBHelper(parent.getContext()); //Öffne die Datenbank
+                        SpinnerDBHelper db= new SpinnerDBHelper(parent.getContext()); //Öffne die Datenbank
                         Fach fach=faecher.get(position);
                         Intent stundenplanEinstellungen=new Intent(context,StundenplanBearbeiten.class);
                         stundenplanEinstellungen.putExtra("fach",fach);
