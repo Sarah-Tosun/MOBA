@@ -53,5 +53,18 @@
         android:id="@+id/beschreibung_textview_aufg"
         android:layout_alignBottom="@+id/checkbox_aufg"
         android:layout_alignStart="@+id/fach_text_aufg" />
+    <TextView
+        android:id="@+id/textview_kuerzel_aufg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/icon_image_aufg"
+        android:layout_alignTop="@+id/icon_image_aufg"
+        android:layout_alignRight="@+id/icon_image_aufg"
+        android:layout_alignBottom="@+id/icon_image_aufg"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:textSize="24sp" />
 
 </RelativeLayout>

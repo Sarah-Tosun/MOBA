@@ -17,8 +17,14 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
 import de.hs_weingarten.haplaner.datenbank_Aufgaben.Aufgabe;
 import de.hs_weingarten.haplaner.datenbank_Aufgaben.AufgabenDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Spinner.SpinnerDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Spinner.SpinnerValue;
 
 /**
  * Created by Sarah on 09.01.2017.
@@ -31,6 +37,10 @@ public class AufgabenEinstellung extends AppCompatActivity {
     private Calendar calendar;
     private TextView dateView;
     private int year, month, day;
+    private Spinner spinner;
+    private SpinnerDBHelper dbSpinner;
+    private List<String> faecher;
+    private List<SpinnerValue> myDataset;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.einstellungen_aufgaben);
@@ -43,12 +53,16 @@ public class AufgabenEinstellung extends AppCompatActivity {
 
         Intent myIntent = getIntent();
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.fächer, android.R.layout.simple_spinner_item);
+        dbSpinner=new SpinnerDBHelper(this);
+        myDataset=dbSpinner.getAllFaecher();
+        faecher=getAllFaecherAsString();
+        Collections.reverse(faecher);
+        //Spinner init
+        spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,faecher);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //Set List
         spinner.setAdapter(adapter);
-        //spinner.setOnItemClickListener((AdapterView.OnItemClickListener) this);
-
         //Button Listener
         Button changeDatum=(Button) findViewById(R.id.changedatum_aufg);
         changeDatum.setOnClickListener(new View.OnClickListener(){
@@ -118,6 +132,18 @@ public class AufgabenEinstellung extends AppCompatActivity {
         Aufgabe aufgabe = new Aufgabe(fach, datum,beschreibung);
         db.addAufgabe(aufgabe);
 
+    }
+    private List<String> getAllFaecherAsString() {
+        List<String> string = new LinkedList<>();
+        int j=0;
+        for (int i = 0; i < myDataset.size(); i++) {
+            if(!myDataset.get(i).getFach().equals("")&&!string.contains(myDataset.get(i).getFach())){
+                string.add(j, myDataset.get(i).getFach());
+                j++;
+            }
+
+        }
+        return string;
     }
 }
 

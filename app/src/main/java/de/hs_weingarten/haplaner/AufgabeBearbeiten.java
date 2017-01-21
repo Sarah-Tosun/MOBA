@@ -21,10 +21,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.ParseException;
+import java.util.Collections;
 import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 import de.hs_weingarten.haplaner.datenbank_Aufgaben.Aufgabe;
 import de.hs_weingarten.haplaner.datenbank_Aufgaben.AufgabenDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Spinner.SpinnerDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Spinner.SpinnerValue;
 
 /**
  * Created by Patrick P. on 1/12/17.
@@ -39,7 +44,10 @@ public class AufgabeBearbeiten extends AppCompatActivity{
     private EditText beschreibungField;
     private int year, month, day;
     private Aufgabe aufgabe;
-
+    private Spinner spinner;
+    private SpinnerDBHelper dbSpinner;
+    private List<String> faecher;
+    private List<SpinnerValue> myDataset;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,10 +86,16 @@ public class AufgabeBearbeiten extends AppCompatActivity{
                 datePickerdialog.show();
             }
         });
+        dbSpinner=new SpinnerDBHelper(this);
+        myDataset=dbSpinner.getAllFaecher();
+        faecher=getAllFaecherAsString();
+        Collections.reverse(faecher);
         //Spinner init
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.fächer, android.R.layout.simple_spinner_item);
+        spinner = (Spinner) findViewById(R.id.spinner);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,faecher);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        //Set List
+        spinner.setAdapter(adapter);
         //Gewähltes Fach als default Value einstellen
         spinner.setAdapter(adapter);
         int spinnerPosition=adapter.getPosition(aufgabe.getFach());
@@ -122,5 +136,17 @@ public class AufgabeBearbeiten extends AppCompatActivity{
         EditText editText= (EditText) findViewById(R.id.beschreibung_edittext_aufg);
         aufgabe.setBeschreibung(editText.getText().toString());
         db.updateAufgabe(aufgabe);
+    }
+    private List<String> getAllFaecherAsString() {
+        List<String> string = new LinkedList<>();
+        int j=0;
+        for (int i = 0; i < myDataset.size(); i++) {
+            if(!myDataset.get(i).getFach().equals("")&&!string.contains(myDataset.get(i).getFach())){
+                string.add(j, myDataset.get(i).getFach());
+                j++;
+            }
+
+        }
+        return string;
     }
 }

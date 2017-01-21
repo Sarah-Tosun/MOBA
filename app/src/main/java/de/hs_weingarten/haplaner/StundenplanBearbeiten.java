@@ -92,8 +92,7 @@ public class StundenplanBearbeiten extends AppCompatActivity{
             dbFaecher.updateFach(fach);
         }
 
-    }
-    private List<String> getAllFaecherAsString() {
+    }private List<String> getAllFaecherAsString() {
         List<String> string = new LinkedList<>();
         int j=0;
         for (int i = 0; i < myDataset.size(); i++) {
@@ -105,4 +104,5 @@ public class StundenplanBearbeiten extends AppCompatActivity{
         }
         return string;
     }
+
 }

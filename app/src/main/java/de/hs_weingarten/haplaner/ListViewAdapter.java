@@ -1,6 +1,7 @@
 package de.hs_weingarten.haplaner;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,8 @@ import java.util.List;
 
 import de.hs_weingarten.haplaner.datenbank_Aufgaben.Aufgabe;
 import de.hs_weingarten.haplaner.datenbank_Aufgaben.AufgabenDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Faecher.Fach;
+import de.hs_weingarten.haplaner.datenbank_Spinner.SpinnerDBHelper;
 
 /**
  * Created by Patrick P. on 11.01.2017.
@@ -31,6 +34,7 @@ public class ListViewAdapter extends BaseAdapter{
         TextView textView3;
         ImageView imageView;
         CheckBox checkBox;
+        TextView kuerzel;
     }
 
     public ListViewAdapter(Context context, List<Aufgabe> objects) {
@@ -59,6 +63,7 @@ public class ListViewAdapter extends BaseAdapter{
             holder.textView2 = (TextView) convertView.findViewById(R.id.datum_textview_aufg);
             holder.textView3 = (TextView) convertView.findViewById(R.id.beschreibung_textview_aufg);
             holder.imageView = (ImageView) convertView.findViewById(R.id.icon_image_aufg);
+            holder.kuerzel=(TextView) convertView.findViewById(R.id.textview_kuerzel_aufg);
             //Checkbox Listener
             holder.checkBox = (CheckBox) convertView.findViewById(R.id.checkbox_aufg);
             holder.checkBox.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +85,9 @@ public class ListViewAdapter extends BaseAdapter{
         holder.textView1.setText(objects.get(position).getFach());
         holder.textView2.setText(objects.get(position).getDatum());
         holder.textView3.setText(objects.get(position).getBeschreibung());
+
+        holder.kuerzel.setVisibility(View.INVISIBLE);
+        holder.imageView.setVisibility(View.VISIBLE);
         String fach=objects.get(position).getFach();
         if(fach.equals(convertView.getResources().getString(R.string.fach_Deutsch))){
             holder.imageView.setImageResource(R.drawable.deutsch);
@@ -104,6 +112,13 @@ public class ListViewAdapter extends BaseAdapter{
         }
         else if(fach.equals(convertView.getResources().getString(R.string.fach_Physik))){
             holder.imageView.setImageResource(R.drawable.physik);
+        }
+        else{
+            SpinnerDBHelper spinnerDBHelper=new SpinnerDBHelper(parent.getContext());
+            String kuerzel=spinnerDBHelper.getKuerzel(fach);
+            holder.imageView.setVisibility(View.INVISIBLE);
+            holder.kuerzel.setText(kuerzel);
+            holder.kuerzel.setVisibility(View.VISIBLE);
         }
         return convertView;
     }
