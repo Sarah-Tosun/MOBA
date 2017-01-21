@@ -1,4 +1,4 @@
-package de.hs_weingarten.haplaner.datenbank_Faecher;
+package de.hs_weingarten.haplaner.datenbank_Spinner;
 
 /**
  * Created by Patrick P. on 09.01.2017.
@@ -24,7 +24,8 @@ public class SpinnerDBHelper extends SQLiteOpenHelper {
     //Aufgaben Columns
     private static final String KEY_ID="id";
     private static final String KEY_FACH="fach";
-    private static final String[] COLUMNS={KEY_ID,KEY_FACH};
+    private static final String KEY_KUERZEL="kuerzel";
+    private static final String[] COLUMNS={KEY_ID,KEY_FACH,KEY_KUERZEL};
 
     private Context context;
 
@@ -38,13 +39,15 @@ public class SpinnerDBHelper extends SQLiteOpenHelper {
         final String SQL_CREATE_FAECHER_TABLE =
                 "CREATE TABLE " + TABLE_SPINNER + " (" +
                         KEY_ID + " INTEGER PRIMARY KEY," +
-                        KEY_FACH + " TEXT" +
+                        KEY_FACH + " TEXT," +
+                        KEY_KUERZEL + " TEXT" +
                         " );";
         db.execSQL(SQL_CREATE_FAECHER_TABLE);
         ContentValues cv = new ContentValues();
         String[] defaultFaecher= context.getResources().getStringArray(R.array.fächer);
         for(int i = 0; i< defaultFaecher.length; i++){
             cv.put(KEY_FACH,defaultFaecher[i]);
+            cv.put(KEY_KUERZEL,defaultFaecher[i].substring(0,2));
             db.insert(TABLE_SPINNER,null,cv);
             cv.clear();
         }
@@ -56,17 +59,18 @@ public class SpinnerDBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public void addFach(Fach fach){
+    public void addFach(SpinnerValue fach){
         SQLiteDatabase db=this.getWritableDatabase();
 
         ContentValues values=new ContentValues();
         values.put(KEY_FACH,fach.getFach());
+        values.put(KEY_KUERZEL,fach.getKuerzel());
 
         db.insert(TABLE_SPINNER,null,values);
 
         db.close();
     }
-    public Fach getFach(int id) {
+    public SpinnerValue getFach(int id) {
         // 1. get reference to readable DB
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -86,15 +90,16 @@ public class SpinnerDBHelper extends SQLiteOpenHelper {
             cursor.moveToFirst();
 
         // 4. build aufgaben object
-        Fach fach = new Fach();
+        SpinnerValue fach = new SpinnerValue();
         fach.setId(Integer.parseInt(cursor.getString(0)));
         fach.setFach(cursor.getString(1));
+        fach.setKuerzel(cursor.getString(2));
 
         // 5. return aufgabe
         return fach;
     }
-    public List<Fach> getAllFaecher() {
-        List<Fach> faecher = new LinkedList<>();
+    public List<SpinnerValue> getAllFaecher() {
+        List<SpinnerValue> faecher = new LinkedList<>();
 
         // 1. build the query
         String query = "SELECT * FROM " + TABLE_SPINNER;
@@ -104,10 +109,10 @@ public class SpinnerDBHelper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery(query, null);
 
         // 3. go over each row, build aufgabe and add it to list
-        Fach fach;
+        SpinnerValue fach;
         if (cursor.moveToFirst()) {
             do {
-                fach = new Fach();
+                fach = new SpinnerValue();
                 fach.setId(Integer.parseInt(cursor.getString(0)));
                 fach.setFach(cursor.getString(1));
 
@@ -118,7 +123,7 @@ public class SpinnerDBHelper extends SQLiteOpenHelper {
         // 4. return list
         return faecher;
     }
-    public int updateFach(Fach fach) {
+    public int updateFach(SpinnerValue fach) {
 
         // 1. get reference to writable DB
         SQLiteDatabase db = this.getWritableDatabase();
@@ -138,7 +143,7 @@ public class SpinnerDBHelper extends SQLiteOpenHelper {
 
         return i;
     }
-    public void deleteFach(Fach fach) {
+    public void deleteFach(SpinnerValue fach) {
 
         // 1. get reference to writable DB
         SQLiteDatabase db = this.getWritableDatabase();
@@ -156,5 +161,30 @@ public class SpinnerDBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_SPINNER);
+    }
+    public String getKuerzel(String fach){
+        // 1. get reference to readable DB
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        // 2. build query
+        Cursor cursor =
+                db.query(TABLE_SPINNER, // a. table
+                        COLUMNS, // b. column names
+                        " fach = ?", // c. selections
+                        new String[]{String.valueOf(fach)}, // d. selections args
+                        null, // e. group by
+                        null, // f. having
+                        null, // g. order by
+                        null); // h. limit
+
+        // 3. if we got results get the first one
+        if (cursor != null)
+            cursor.moveToFirst();
+
+        // 4. build aufgaben object
+        String kuerzel=cursor.getString(2);
+
+        // 5. return aufgabe
+        return kuerzel;
     }
 }

@@ -8,11 +8,12 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 
 import de.hs_weingarten.haplaner.datenbank_Faecher.Fach;
-import de.hs_weingarten.haplaner.datenbank_Faecher.SpinnerDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Spinner.SpinnerDBHelper;
 
 /**
  * Created by Patrick P. on 14.01.2017.
@@ -27,6 +28,7 @@ public class GridViewAdapter extends BaseAdapter{
             ImageView imageView;
             EditText neuesFach;
             EditText kurzZeichen;
+            TextView kürzel;
         }
         public GridViewAdapter(Context context, List<Fach> faecher) {
             inflater = LayoutInflater.from(context);
@@ -48,6 +50,7 @@ public class GridViewAdapter extends BaseAdapter{
                 holder.imageView = (ImageView) convertView.findViewById(R.id.icon_image_stundp);
                 holder.neuesFach = (EditText) convertView.findViewById(R.id.neuesFach);
                 holder.kurzZeichen = (EditText) convertView.findViewById(R.id.kürzel);
+                holder.kürzel= (TextView) convertView.findViewById(R.id.textview_kuerzel);
                 //ImageView Listener
                 holder.imageView.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -64,6 +67,8 @@ public class GridViewAdapter extends BaseAdapter{
                 holder = (ViewHolder) convertView.getTag();
             }
             String fach=faecher.get(position).getFach();
+            holder.kürzel.setVisibility(View.INVISIBLE);
+            holder.imageView.setVisibility(View.VISIBLE);
             if(fach.equals(convertView.getResources().getString(R.string.fach_Deutsch))){
                 holder.imageView.setImageResource(R.drawable.deutsch);
             }
@@ -93,6 +98,23 @@ public class GridViewAdapter extends BaseAdapter{
             }
             else if(fach.equals(convertView.getResources().getString(R.string.leer))){
                 // hole den Text aus Kürzel und setzte es in die Tabelle
+            }
+            else{
+                SpinnerDBHelper spinnerDBHelper=new SpinnerDBHelper(parent.getContext());
+                String kuerzel=spinnerDBHelper.getKuerzel(fach);
+                holder.imageView.setVisibility(View.INVISIBLE);
+                holder.kürzel.setText(kuerzel);
+                holder.kürzel.setVisibility(View.VISIBLE);
+                holder.kürzel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        SpinnerDBHelper db= new SpinnerDBHelper(parent.getContext()); //Öffne die Datenbank
+                        Fach fach=faecher.get(position);
+                        Intent stundenplanEinstellungen=new Intent(context,StundenplanBearbeiten.class);
+                        stundenplanEinstellungen.putExtra("fach",fach);
+                        context.startActivity(stundenplanEinstellungen);
+                    }
+                });
             }
 
             return convertView;

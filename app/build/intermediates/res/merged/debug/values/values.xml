@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="fächer">
+        <item>neues Fach</item>
         <item>Deutsch</item>+
         <item>Englisch</item>
         <item>Mathematik</item>
@@ -10,7 +11,6 @@
         <item>Physik</item>
         <item>Erdkunde</item>
         <item>Freistunde</item>
-        <item/>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>

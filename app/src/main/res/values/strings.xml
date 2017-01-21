@@ -6,6 +6,7 @@
     <string name="kuerzel_fuer_icon">Kürzel für Icon</string>
     <string name="ButtonDatum">Datum ändern</string>
     <string-array name="fächer">
+        <item>neues Fach</item>
         <item>Deutsch</item>+
         <item>Englisch</item>
         <item>Mathematik</item>
@@ -15,7 +16,6 @@
         <item>Physik</item>
         <item>Erdkunde</item>
         <item>Freistunde</item>
-        <item></item>
     </string-array>
     <string name="fach_Deutsch">Deutsch</string>
     <string name="fach_Englisch">Englisch</string>

@@ -9,12 +9,14 @@ import java.io.Serializable;
 public class SpinnerValue implements Serializable{
     private int id;
     protected String fach;
+    protected String kuerzel;
 
     public SpinnerValue(){
 
     }
-    public SpinnerValue(String _fach){
+    public SpinnerValue(String _fach,String _kuerzel){
         fach=_fach;
+        kuerzel=_kuerzel;
     }
 
     public int getId() {
@@ -33,4 +35,7 @@ public class SpinnerValue implements Serializable{
         this.fach = fach;
     }
 
+    public String getKuerzel(){return kuerzel;}
+
+    public void setKuerzel(String kuerzel){this.kuerzel=kuerzel;}
 }

@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import de.hs_weingarten.haplaner.datenbank_Faecher.FaecherDBHelper;
-import de.hs_weingarten.haplaner.datenbank_Faecher.SpinnerDBHelper;
 import de.hs_weingarten.haplaner.datenbank_Faecher.Fach;
 
 
