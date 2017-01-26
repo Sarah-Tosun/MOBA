@@ -2,7 +2,7 @@ package de.hs_weingarten.haplaner;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
-import android.icu.util.Calendar;
+import java.util.Calendar;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
@@ -46,6 +46,7 @@ public class AufgabenEinstellung extends AppCompatActivity {
         setContentView(R.layout.einstellungen_aufgaben);
         db=new AufgabenDBHelper(this);
         ActionBar actionBar = getSupportActionBar();
+
         if(actionBar != null){
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);

@@ -55,7 +55,6 @@ public class GridViewAdapter extends BaseAdapter{
                 holder.imageView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        SpinnerDBHelper db= new SpinnerDBHelper(parent.getContext()); //Öffne die Datenbank
                         Fach fach=faecher.get(position);
                         Intent stundenplanEinstellungen=new Intent(context,StundenplanBearbeiten.class);
                         stundenplanEinstellungen.putExtra("fach",fach);
@@ -97,7 +96,6 @@ public class GridViewAdapter extends BaseAdapter{
                 holder.imageView.setImageResource(R.drawable.plus);
             }
             else if(fach.equals(convertView.getResources().getString(R.string.leer))){
-                // hole den Text aus Kürzel und setzte es in die Tabelle
             }
             else{
                 SpinnerDBHelper spinnerDBHelper=new SpinnerDBHelper(parent.getContext());
@@ -108,7 +106,6 @@ public class GridViewAdapter extends BaseAdapter{
                 holder.kürzel.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        SpinnerDBHelper db= new SpinnerDBHelper(parent.getContext()); //Öffne die Datenbank
                         Fach fach=faecher.get(position);
                         Intent stundenplanEinstellungen=new Intent(context,StundenplanBearbeiten.class);
                         stundenplanEinstellungen.putExtra("fach",fach);

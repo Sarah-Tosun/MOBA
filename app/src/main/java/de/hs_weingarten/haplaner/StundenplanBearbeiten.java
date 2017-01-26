@@ -1,13 +1,19 @@
 package de.hs_weingarten.haplaner;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Collections;
@@ -36,7 +42,6 @@ public class StundenplanBearbeiten extends AppCompatActivity{
         setContentView(R.layout.bearbeiten_stundenplan);
         Intent myIntent=getIntent();
         fach =(Fach) myIntent.getSerializableExtra("fach");
-        //Werte aus fach lesen und setzen
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null){
             actionBar.setHomeButtonEnabled(true);
@@ -48,8 +53,27 @@ public class StundenplanBearbeiten extends AppCompatActivity{
         Collections.reverse(faecher);
         //Spinner init
         spinner = (Spinner) findViewById(R.id.spinner_bearbeiten_stundp);
-        ArrayAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,faecher);
+        final ArrayAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,faecher);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                EditText neuesFach=(EditText) findViewById(R.id.neuesFach_bearbeiten_stundp);
+                EditText kuerzel=(EditText) findViewById(R.id.kürzel_bearbeiten_stundp);
+                if(faecher.get(position).equals("neues Fach")){
+                    neuesFach.setVisibility(View.VISIBLE);
+                    kuerzel.setVisibility(View.VISIBLE);
+                }
+                else{
+                    neuesFach.setVisibility(View.INVISIBLE);
+                    kuerzel.setVisibility(View.INVISIBLE);
+                }
+
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
         //Gewähltes Fach als default Value einstellen
         spinner.setAdapter(adapter);
         int spinnerPosition=adapter.getPosition(fach.getFach());
@@ -62,10 +86,9 @@ public class StundenplanBearbeiten extends AppCompatActivity{
                 if(!spinner.getSelectedItem().toString().equals("neues Fach")){
                     updateFach();
                 }
-                else{
+                else {
                     addNeuesFach();
                 }
-                finish();
                 break;
         }
     }
@@ -74,14 +97,14 @@ public class StundenplanBearbeiten extends AppCompatActivity{
         fach.setFach(spinner.getSelectedItem().toString());
         dbFaecher=new FaecherDBHelper(this);
         dbFaecher.updateFach(fach);
-        //startActivity(new Intent(this,MainActivity.class));
+        finish();
     }
     public void addNeuesFach(){
         EditText neuesFach=(EditText) findViewById(R.id.neuesFach_bearbeiten_stundp);
         EditText kuerzel=(EditText) findViewById(R.id.kürzel_bearbeiten_stundp);
         String fachString=neuesFach.getText().toString();
-        if(neuesFach.getText().toString().equals("")){
-            Toast toast = Toast.makeText(getApplicationContext(), "Geben Sie bitte ein Namen ein", Toast.LENGTH_SHORT);
+        if(neuesFach.getText().toString().equals("")||kuerzel.getText().toString().equals("")){
+            Toast toast = Toast.makeText(getApplicationContext(), "Geben Sie bitte ein Fach und ein Kürzel ein", Toast.LENGTH_SHORT);
             toast.show();
         }
         else {
@@ -90,7 +113,9 @@ public class StundenplanBearbeiten extends AppCompatActivity{
             dbSpinner.addFach(spinnerFach);
             dbFaecher=new FaecherDBHelper(this);
             dbFaecher.updateFach(fach);
+            finish();
         }
+
 
     }private List<String> getAllFaecherAsString() {
         List<String> string = new LinkedList<>();

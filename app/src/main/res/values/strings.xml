@@ -27,4 +27,5 @@
     <string name="fach_Erdkunde">Erdkunde</string>
     <string name="freistunde">Freistunde</string>
     <string name="leer"></string>
+    <string name="kürzel_des_icons">Kürzel des Faches</string>
 </resources>

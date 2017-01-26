@@ -1,11 +1,13 @@
 package de.hs_weingarten.haplaner;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -17,6 +19,7 @@ import de.hs_weingarten.haplaner.datenbank_Aufgaben.Aufgabe;
 import de.hs_weingarten.haplaner.datenbank_Aufgaben.AufgabenDBHelper;
 import de.hs_weingarten.haplaner.datenbank_Faecher.Fach;
 import de.hs_weingarten.haplaner.datenbank_Spinner.SpinnerDBHelper;
+import de.hs_weingarten.haplaner.datenbank_Spinner.SpinnerValue;
 
 /**
  * Created by Patrick P. on 11.01.2017.
@@ -69,13 +72,33 @@ public class ListViewAdapter extends BaseAdapter{
             holder.checkBox.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    AufgabenDBHelper db= new AufgabenDBHelper(parent.getContext()); //Öffne die Datenbank
-                    Aufgabe aufgabe=objects.get(position); //Holt die Aufgabe an der Position
-                    objects.remove(position);//Löscht die Aufgabe aus dem Adapter der Anzeige
-                    db.deleteAufgabe(aufgabe); //Löscht die Aufgabe aus der DB
-                    Toast.makeText(parent.getContext(), "Deletet Item: "+position,Toast.LENGTH_SHORT).show();
-                    notifyDataSetChanged(); //Refreshed die UI
+                    final AufgabenDBHelper db= new AufgabenDBHelper(parent.getContext()); //Öffne die Datenbank
+                    final Aufgabe aufgabe=objects.get(position);
+                    final Dialog dialog = new Dialog(v.getContext());
+                    dialog.setContentView(R.layout.dialog_delete_fach);
+                    Button okButton=(Button) dialog.findViewById(R.id.dialog_ok_button);
+                    okButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            objects.remove(position);//Löscht die Aufgabe aus dem Adapter der Anzeige
+                            db.deleteAufgabe(aufgabe); //Löscht die Aufgabe aus der DB
+                            dialog.dismiss();
+                            notifyDataSetChanged(); //Refreshed die UI
+                        }
+                    });
+                    Button dismissButton=(Button) dialog.findViewById(R.id.dialog_dismiss_button);
+                    dismissButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+
+                        }
+                    });
+                    TextView textView=(TextView) dialog.findViewById(R.id.dialog_title);
+                    textView.setText("Möchten Sie "+aufgabe.getFach().toString()+" wirklich löschen?");
+                    dialog.show();
                     ((CheckBox)v).setChecked(false);
+                    //Toast.makeText(parent.getContext(), "Deletet Item: "+position,Toast.LENGTH_SHORT).show();
                 }
             });
             convertView.setTag(holder);

@@ -28,12 +28,12 @@
         "source": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.0\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\einstellung_stundenplan.xml",
-        "source": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\src\\main\\res\\layout\\einstellung_stundenplan.xml"
-    },
-    {
         "merged": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_aufgabe.xml",
         "source": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\src\\main\\res\\layout\\list_aufgabe.xml"
+    },
+    {
+        "merged": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\einstellung_stundenplan.xml",
+        "source": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\src\\main\\res\\layout\\einstellung_stundenplan.xml"
     },
     {
         "merged": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
@@ -178,6 +178,10 @@
     {
         "merged": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_delete_fach.xml",
+        "source": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\src\\main\\res\\layout\\dialog_delete_fach.xml"
     },
     {
         "merged": "F:\\User\\Downloads\\HAPlaner\\MOBA1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_aufgaben.xml",

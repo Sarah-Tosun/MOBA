@@ -48,13 +48,12 @@ public class AufgabenFragment extends Fragment implements View.OnClickListener {
         fab.setOnClickListener(this);
         listView = (ListView) rootview.findViewById(R.id.listview_aufg);
         //Bearbeiten der Aufgabe mit LongClick
-        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent aufgabeBearbeiten=new Intent(getActivity(),AufgabeBearbeiten.class);
                 aufgabeBearbeiten.putExtra("aufgabe", db.getAufgabe(position+1));
                 startActivity(aufgabeBearbeiten);
-                return true;
             }
         });
         //Hole alle vorhandenen Datensätze

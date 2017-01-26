@@ -30,7 +30,8 @@
             android:id="@+id/neuesFach_bearbeiten_stundp"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:hint="@string/neues_fach" />
+            android:hint="@string/neues_fach"
+            android:visibility="invisible" />
 
         <EditText
             android:layout_marginTop="50dp"
@@ -41,7 +42,8 @@
             android:id="@+id/kürzel_bearbeiten_stundp"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:hint="@string/kuerzel_fuer_icon" />
+            android:hint="@string/kürzel_des_icons"
+            android:visibility="invisible" />
 
     </LinearLayout>
     <android.support.design.widget.FloatingActionButton

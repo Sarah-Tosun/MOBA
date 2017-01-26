@@ -333,6 +333,7 @@
     <string name="freistunde">Freistunde</string>
     <string name="freitag">Freitag</string>
     <string name="kuerzel_fuer_icon">Kürzel für Icon</string>
+    <string name="kürzel_des_icons">Kürzel des Faches</string>
     <string name="leer"/>
     <string name="mittwoch">Mittwoch</string>
     <string name="montag">Montag</string>
